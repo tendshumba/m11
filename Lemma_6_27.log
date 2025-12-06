@@ -1,0 +1,165 @@
+> load "Lemma_6_27.m";
+Loading "Lemma_6_27.m"
+Loading "/home/tendai/Computations/IsSixTranspositionClass.m"
+true
+Time: 0.470
+Time: 21.250
+[ 3, 2, 3, 6, 3, 3, 4, 6, 5 ]
+[ 3A, 2A, 3A, 6A, 3A, 3A, 4B, 6A, 5A ]
+[ 3C, 2A, 3A, 6A, 3A, 3A, 4B, 6A, 5A ]
+true
+Time: 0.480
+Time: 24.620
+Time: 1.090
+Time: 42.220
+[ 3, 3, 2, 3, 6, 4, 3, 6, 5 ]
+[ undef, undef, undef, undef, 6A, undef, undef, 6A ]
+[ undef, undef, undef, undef, 6A, undef, undef, 6A, 5A ]
+[ undef, undef, undef, undef, 6A, undef, undef, 6A, 5A ]
+[ undef, 3A, 2A, undef, 6A, 4B, 3A, 6A, 5A ]
+[ 3A, 3A, 2A, 3C, 6A, 4B, 3A, 6A, 5A ]
+2
+[ 3C, 3A, 2A, 3A, 6A, 4B, 3A, 6A, 5A ]
+[ 3C, 3A, 2A, 3C, 6A, 4B, 3A, 6A, 5A ]
+1265
+1386
+1485
+1485
+  #--- Run Parameters ---
+Wo:60000000120; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:494; Look:0; Com:10;
+C:1000; R:1; Fi:77; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=729 r=1 h=1 n=733; l=2 c=+0.00; m=729 t=732
+DS: a=424 r=1 h=1 n=733; l=3 c=+0.00; s=2000 d=577 c=424
+CP: a=9250 r=199 h=1522 n=10733; l=21 c=+1.09; m=9251 t=10732
+CP: a=18070 r=455 h=2839 n=20733; l=41 c=+1.09; m=18070 t=20732
+INDEX = 23760 (a=23760 r=630 h=26463 n=26463; l=54 c=2.88; m=23760 t=26462)
+The number of generators of P6 is 31.
+Loading "ConstructClass.m"
+18
+  #--- Run Parameters ---
+Wo:102000000204; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:1376; Look:0; Com:10;
+C:1000; R:1; Fi:130; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=139 r=1 h=1 n=141; l=2 c=+0.00; m=139 t=140
+CP: a=9143 r=20 h=947 n=10141; l=21 c=+0.44; m=9143 t=10140
+CP: a=18256 r=39 h=1461 n=20141; l=41 c=+0.51; m=18256 t=20140
+INDEX = 23760 (a=23760 r=45 h=25724 n=25724; l=54 c=1.28; m=23760 t=25723)
+18
+[
+    GModule of dimension 1 over GF(5),
+    GModule of dimension 10 over GF(5),
+    GModule of dimension 11 over GF(5),
+    GModule of dimension 16 over GF(5),
+    GModule of dimension 16 over GF(5),
+    GModule of dimension 20 over GF(5),
+    GModule of dimension 45 over GF(5),
+    GModule of dimension 55 over GF(5)
+]
+  #--- Run Parameters ---
+Wo:32000000064; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:151; Look:0; Com:10;
+C:1000; R:1; Fi:42; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=123 r=1 h=1 n=125; l=2 c=+0.00; m=123 t=124
+CP: a=9841 r=11 h=266 n=10125; l=21 c=+0.08; m=9841 t=10124
+CP: a=19111 r=21 h=485 n=20125; l=41 c=+0.09; m=19131 t=20124
+CP: a=28833 r=31 h=719 n=30125; l=61 c=+0.12; m=28833 t=30124
+CP: a=38744 r=44 h=1280 n=40125; l=81 c=+0.15; m=38744 t=40124
+INDEX = 39600 (a=39600 r=45 h=40981 n=40981; l=84 c=0.45; m=39600 t=40980)
+Time: 0.830
+10
+  #--- Run Parameters ---
+Wo:34000000068; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:169; Look:0; Com:10;
+C:1000; R:1; Fi:45; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=139 r=1 h=1 n=145; l=2 c=+0.00; m=139 t=144
+CP: a=9685 r=16 h=230 n=10145; l=21 c=+0.08; m=9685 t=10144
+CP: a=18719 r=41 h=855 n=20145; l=41 c=+0.09; m=18719 t=20144
+CP: a=28162 r=51 h=929 n=30145; l=61 c=+0.12; m=28162 t=30144
+CP: a=38060 r=64 h=1279 n=40145; l=81 c=+0.15; m=38060 t=40144
+INDEX = 39600 (a=39600 r=66 h=41687 n=41687; l=86 c=0.47; m=39600 t=41686)
+Time: 0.780
+15
+  #--- Run Parameters ---
+Wo:44000000088; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:274; Look:0; Com:10;
+C:1000; R:1; Fi:57; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=557 r=1 h=1 n=561; l=2 c=+0.00; m=557 t=560
+CP: a=9690 r=43 h=555 n=10561; l=21 c=+0.58; m=9690 t=10560
+CP: a=18317 r=446 h=2604 n=20561; l=41 c=+0.55; m=18317 t=20560
+CP: a=27324 r=464 h=3071 n=30561; l=61 c=+0.63; m=27324 t=30560
+CP: a=37135 r=476 h=3596 n=40561; l=81 c=+0.70; m=37135 t=40560
+INDEX = 39600 (a=39600 r=480 h=43040 n=43040; l=88 c=2.65; m=39600 t=43039)
+Time: 3.270
+25
+  #--- Run Parameters ---
+Wo:44000000088; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:274; Look:0; Com:10;
+C:1000; R:1; Fi:57; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+DS: a=843 r=1 h=1 n=848; l=2 c=+0.00; s=2000 d=997 c=4
+RS: a=917 r=1 h=1 n=922; l=2 c=+0.00; m=917 t=921
+CP: a=9598 r=186 h=919 n=10922; l=21 c=+0.76; m=9598 t=10921
+CP: a=18041 r=636 h=2948 n=20922; l=41 c=+0.76; m=18041 t=20921
+CP: a=27168 r=814 h=3121 n=30922; l=61 c=+0.78; m=27168 t=30921
+CP: a=36879 r=824 h=4315 n=40922; l=81 c=+0.86; m=36879 t=40921
+INDEX = 39600 (a=39600 r=827 h=43646 n=43646; l=88 c=3.43; m=39600 t=43645)
+Time: 4.190
+15
+  #--- Run Parameters ---
+Wo:52000000104; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:376; Look:0; Com:10;
+C:1000; R:1; Fi:67; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+DS: a=923 r=1 h=1 n=924; l=2 c=+0.00; s=2000 d=1001 c=0
+DS: a=1866 r=1 h=1 n=1867; l=2 c=+0.00; s=4000 d=2001 c=0
+RS: a=2919 r=1 h=1 n=2920; l=2 c=+0.00; m=2919 t=2919
+CP: a=9689 r=270 h=3149 n=12920; l=21 c=+3.28; m=9689 t=12919
+CP: a=17605 r=1125 h=6340 n=22920; l=41 c=+3.19; m=17605 t=22919
+CP: a=25796 r=1651 h=7053 n=32920; l=61 c=+3.24; m=25796 t=32919
+CP: a=35571 r=2558 h=7135 n=42920; l=81 c=+3.38; m=35571 t=42919
+INDEX = 39600 (a=39600 r=2819 h=46955 n=46955; l=90 c=14.54; m=39600 t=46954)
+Time: 15.110
+25
+  #--- Run Parameters ---
+Wo:102000000204; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:1376; Look:0; Com:10;
+C:1000; R:1; Fi:130; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=123 r=1 h=1 n=128; l=2 c=+0.00; m=123 t=127
+CP: a=9777 r=12 h=100 n=10128; l=21 c=+0.50; m=9777 t=10127
+CP: a=19259 r=24 h=158 n=20128; l=41 c=+0.53; m=19259 t=20127
+CP: a=28943 r=34 h=633 n=30128; l=61 c=+0.57; m=28943 t=30127
+CP: a=38872 r=47 h=891 n=40128; l=81 c=+0.63; m=38872 t=40127
+INDEX = 39600 (a=39600 r=48 h=40856 n=40856; l=84 c=2.28; m=39600 t=40855)
+Time: 4.420
+10
+  #--- Run Parameters ---
+Wo:122000000244; Max:1000000000; Mess:10000; Ti:-1; Ho:-1; Loop:0;
+As:0; Path:0; Row:1; Mend:0; No:1951; Look:0; Com:10;
+C:1000; R:1; Fi:155; PMod:3; PSiz:256; DMod:4; DSiz:1000;
+  #---------------------------------
+SG: a=1 r=1 h=1 n=2; l=1 c=+0.00; m=1 t=1
+RS: a=166 r=1 h=1 n=173; l=2 c=+0.00; m=166 t=172
+CP: a=9794 r=16 h=152 n=10173; l=21 c=+0.74; m=9794 t=10172
+CP: a=19200 r=66 h=171 n=20173; l=41 c=+0.75; m=19200 t=20172
+CP: a=28858 r=77 h=241 n=30173; l=61 c=+0.80; m=28858 t=30172
+CP: a=38773 r=89 h=592 n=40173; l=81 c=+0.87; m=38773 t=40172
+INDEX = 39600 (a=39600 r=90 h=41000 n=41000; l=84 c=3.24; m=39600 t=40999)
+Time: 4.850
+25
+
+Total time: 669.870 seconds, Total memory usage: 474623.09MB

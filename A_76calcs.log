@@ -1,0 +1,955 @@
+> load "A_76calcs.m";
+Loading "A_76calcs.m"
+Algebra of dimension 76 with base ring Rational Field
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 1.460 seconds.
+law 0*0 = [ 0 ] checked in 0.130 seconds.
+products of vectors from the respective eigenspaces found in 0.810 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.910 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.030 seconds.
+products of vectors from the respective eigenspaces found in 0.820 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.820 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.900 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.020 seconds.
+idempotency check completed in 0.000
+The number of all sigma maps is 0
+products of tau maps of axes with that of the first axis found in 0.040 seconds
+Orders of products found in 0.260 seconds
+The number of tau maps of maximum order 5 is 16 found in 0.000 seconds
+The number of used products is 3
+The initial group formed in 0.010 seconds
+Reducing the number of generators of the Miyamoto group..
+The numbers of generators of the current group reduced to two
+The number of generators of the Miyamoto group reduced in 3.570 seconds
+The Miyamoto group is A6
+The number of generators of Miy is 2
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.000 seconds.
+The isomorphism between the permutation and matrix representation found in 0.000
+seconds.
+Time: 5.700
+A6
+The structure constants accessed in 0.000 seconds
+Left-hand and right-hand matrices formed in 0.780 seconds.
+The solution space for the system found in 328.530 seconds
+The current memory used is 1030.50000000000000000000000000 megabytes
+checking on all triples..
+The products of basis elements accessed in 0.010 seconds.
+The values (a_ia_j, a_k) evaluated in 0.220 seconds.
+Check for basis 1 of the solution space completed in 0.700 seconds
+Time: 330.470
+D4
+3
+[ C4, C2^2, C2^2 ]
+3
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 0 
+The current counter current is [ 1, 3 ] and the new counter is [ 1, 3 ]
+multiplication is now closed with minimum 1-closure 
+now exited the while loop
+C2^2
+products of basis vectors of the subspace found in 0.310 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.310 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+products of basis vectors of the subspace found in 0.310 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.310 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+Time: 0.620
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 1.540 seconds.
+law 0*0 = [ 0 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.880 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.950 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.030 seconds.
+products of vectors from the respective eigenspaces found in 0.840 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.850 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.930 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.010 seconds.
+The length condition has been imposed.
+ideal set up in 0.030 seconds.
+The Groebner basis formed in 0.000 seconds.
+The size of the variety over the algebraic closure of the ground field found in 
+0.000 seconds.
+ideal set up in 0.020 seconds.
+ideal set up in 0.020 seconds.
+The Groebner basis formed in 0.000 seconds.
+The size of the variety over the algebraic closure of the ground field found in 
+0.000 seconds.
+Time: 6.360
+1440
+2
+6
+4
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.110 seconds
+Current size of used_prods is 31 
+The current counter current is [ 1, 45 ] and the new counter is [ 1, 45 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 76
+Current size of used_prods is 31 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 76 generators
+for i eq 1, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.160 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 2 products of images formed in 0.160 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.180 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 4 products of images formed in 0.180 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 5 products of images formed in 0.170 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 6 products of images formed in 0.170 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.170 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 8 products of images formed in 0.170 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.180 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.180 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 11 products of images formed in 0.150 seconds
+for i eq 12, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.130 seconds
+for i eq 13, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 13 products of images formed in 0.190 seconds
+for i eq 14, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 14 products of images formed in 0.090 seconds
+for i eq 15, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 15 products of images formed in 0.160 seconds
+for i eq 16, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 16 products of images formed in 0.150 seconds
+for i eq 17, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 17 products of images formed in 0.150 seconds
+for i eq 18, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 18 products of images formed in 0.180 seconds
+for i eq 19, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 19 products of images formed in 0.190 seconds
+for i eq 20, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 20 products of images formed in 0.170 seconds
+for i eq 21, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 21 products of images formed in 0.180 seconds
+for i eq 22, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 22 products of images formed in 0.160 seconds
+for i eq 23, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 23 products of images formed in 0.180 seconds
+for i eq 24, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 24 products of images formed in 0.130 seconds
+for i eq 25, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 25 products of images formed in 0.140 seconds
+for i eq 26, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 26 products of images formed in 0.140 seconds
+for i eq 27, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 27 products of images formed in 0.140 seconds
+for i eq 28, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 28 products of images formed in 0.020 seconds
+for i eq 29, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 29 products of images formed in 0.130 seconds
+for i eq 30, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 30 products of images formed in 0.140 seconds
+for i eq 31, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 31 products of images formed in 0.130 seconds
+for i eq 32, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 32 products of images formed in 0.010 seconds
+for i eq 33, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 33 products of images formed in 0.000 seconds
+for i eq 34, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 34 products of images formed in 0.000 seconds
+for i eq 35, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 35 products of images formed in 0.000 seconds
+for i eq 36, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 36 products of images formed in 0.010 seconds
+for i eq 37, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 37 products of images formed in 0.000 seconds
+for i eq 38, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 38 products of images formed in 0.000 seconds
+for i eq 39, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 39 products of images formed in 0.000 seconds
+for i eq 40, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 40 products of images formed in 0.000 seconds
+for i eq 41, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 41 products of images formed in 0.010 seconds
+for i eq 42, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 42 products of images formed in 0.000 seconds
+for i eq 43, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 43 products of images formed in 0.000 seconds
+for i eq 44, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 44 products of images formed in 0.000 seconds
+for i eq 45, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 45 products of images formed in 0.000 seconds
+for i eq 46, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 46 products of images formed in 0.010 seconds
+for i eq 47, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 47 products of images formed in 0.000 seconds
+for i eq 48, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 48 products of images formed in 0.000 seconds
+for i eq 49, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 49 products of images formed in 0.000 seconds
+for i eq 50, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 50 products of images formed in 0.000 seconds
+for i eq 51, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 51 products of images formed in 0.010 seconds
+for i eq 52, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 52 products of images formed in 0.000 seconds
+for i eq 53, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 53 products of images formed in 0.000 seconds
+for i eq 54, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 54 products of images formed in 0.000 seconds
+for i eq 55, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 55 products of images formed in 0.000 seconds
+for i eq 56, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 56 products of images formed in 0.000 seconds
+for i eq 57, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 57 products of images formed in 0.000 seconds
+for i eq 58, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 58 products of images formed in 0.000 seconds
+for i eq 59, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 59 products of images formed in 0.000 seconds
+for i eq 60, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 60 products of images formed in 0.000 seconds
+for i eq 61, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 61 products of images formed in 0.000 seconds
+for i eq 62, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 62 products of images formed in 0.010 seconds
+for i eq 63, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 63 products of images formed in 0.000 seconds
+for i eq 64, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 64 products of images formed in 0.000 seconds
+for i eq 65, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 65 products of images formed in 0.000 seconds
+for i eq 66, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 66 products of images formed in 0.000 seconds
+for i eq 67, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 67 products of images formed in 0.000 seconds
+for i eq 68, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 68 products of images formed in 0.000 seconds
+for i eq 69, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 69 products of images formed in 0.000 seconds
+for i eq 70, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 70 products of images formed in 0.000 seconds
+for i eq 71, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 71 products of images formed in 0.000 seconds
+for i eq 72, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 72 products of images formed in 0.000 seconds
+for i eq 73, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 73 products of images formed in 0.000 seconds
+for i eq 74, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 74 products of images formed in 0.000 seconds
+for i eq 75, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 75 products of images formed in 0.010 seconds
+for i eq 76, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 76 products of images formed in 0.000 seconds
+6
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.110 seconds
+Current size of used_prods is 31 
+The current counter current is [ 1, 45 ] and the new counter is [ 1, 45 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 76
+Current size of used_prods is 31 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.010 seconds
+We check on the 76 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.160 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.170 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.180 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 4 products of images formed in 0.190 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.180 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 6 products of images formed in 0.170 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 7 products of images formed in 0.170 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.170 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.190 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.180 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.170 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+for i eq 13, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 13 products of images formed in 0.190 seconds
+for i eq 14, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 14 products of images formed in 0.140 seconds
+for i eq 15, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 15 products of images formed in 0.160 seconds
+for i eq 16, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 16 products of images formed in 0.140 seconds
+for i eq 17, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 17 products of images formed in 0.170 seconds
+for i eq 18, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 18 products of images formed in 0.190 seconds
+for i eq 19, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 19 products of images formed in 0.180 seconds
+for i eq 20, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 20 products of images formed in 0.170 seconds
+for i eq 21, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 21 products of images formed in 0.180 seconds
+for i eq 22, products of the generators found in 0.000 seconds
+images of products found in 0.010 seconds
+for i eq 22 products of images formed in 0.160 seconds
+for i eq 23, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 23 products of images formed in 0.180 seconds
+for i eq 24, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 24 products of images formed in 0.140 seconds
+for i eq 25, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 25 products of images formed in 0.150 seconds
+for i eq 26, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 26 products of images formed in 0.140 seconds
+for i eq 27, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 27 products of images formed in 0.010 seconds
+for i eq 28, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 28 products of images formed in 0.150 seconds
+for i eq 29, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 29 products of images formed in 0.140 seconds
+for i eq 30, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 30 products of images formed in 0.140 seconds
+for i eq 31, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 31 products of images formed in 0.000 seconds
+for i eq 32, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 32 products of images formed in 0.000 seconds
+for i eq 33, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 33 products of images formed in 0.000 seconds
+for i eq 34, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 34 products of images formed in 0.000 seconds
+for i eq 35, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 35 products of images formed in 0.000 seconds
+for i eq 36, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 36 products of images formed in 0.000 seconds
+for i eq 37, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 37 products of images formed in 0.000 seconds
+for i eq 38, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 38 products of images formed in 0.010 seconds
+for i eq 39, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 39 products of images formed in 0.000 seconds
+for i eq 40, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 40 products of images formed in 0.000 seconds
+for i eq 41, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 41 products of images formed in 0.000 seconds
+for i eq 42, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 42 products of images formed in 0.000 seconds
+for i eq 43, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 43 products of images formed in 0.010 seconds
+for i eq 44, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 44 products of images formed in 0.000 seconds
+for i eq 45, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 45 products of images formed in 0.000 seconds
+for i eq 46, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 46 products of images formed in 0.000 seconds
+for i eq 47, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 47 products of images formed in 0.000 seconds
+for i eq 48, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 48 products of images formed in 0.010 seconds
+for i eq 49, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 49 products of images formed in 0.000 seconds
+for i eq 50, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 50 products of images formed in 0.000 seconds
+for i eq 51, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 51 products of images formed in 0.000 seconds
+for i eq 52, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 52 products of images formed in 0.000 seconds
+for i eq 53, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 53 products of images formed in 0.010 seconds
+for i eq 54, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 54 products of images formed in 0.000 seconds
+for i eq 55, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 55 products of images formed in 0.000 seconds
+for i eq 56, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 56 products of images formed in 0.000 seconds
+for i eq 57, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 57 products of images formed in 0.000 seconds
+for i eq 58, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 58 products of images formed in 0.000 seconds
+for i eq 59, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 59 products of images formed in 0.010 seconds
+for i eq 60, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 60 products of images formed in 0.000 seconds
+for i eq 61, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 61 products of images formed in 0.000 seconds
+for i eq 62, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 62 products of images formed in 0.000 seconds
+for i eq 63, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 63 products of images formed in 0.000 seconds
+for i eq 64, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 64 products of images formed in 0.000 seconds
+for i eq 65, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 65 products of images formed in 0.010 seconds
+for i eq 66, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 66 products of images formed in 0.000 seconds
+for i eq 67, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 67 products of images formed in 0.000 seconds
+for i eq 68, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 68 products of images formed in 0.000 seconds
+for i eq 69, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 69 products of images formed in 0.000 seconds
+for i eq 70, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 70 products of images formed in 0.000 seconds
+for i eq 71, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 71 products of images formed in 0.010 seconds
+for i eq 72, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 72 products of images formed in 0.000 seconds
+for i eq 73, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 73 products of images formed in 0.000 seconds
+for i eq 74, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 74 products of images formed in 0.000 seconds
+for i eq 75, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 75 products of images formed in 0.000 seconds
+for i eq 76, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 76 products of images formed in 0.000 seconds
+Time: 4.990
+4
+1440
+3
+The length condition has been imposed.
+ideal set up in 0.020 seconds.
+The Groebner basis formed in 0.000 seconds.
+The size of the variety over the algebraic closure of the ground field found in 
+0.000 seconds.
+The length condition has been imposed.
+ideal set up in 0.020 seconds.
+The Groebner basis formed in 0.000 seconds.
+The size of the variety over the algebraic closure of the ground field found in 
+0.000 seconds.
+The length condition has been imposed.
+ideal set up in 0.020 seconds.
+The Groebner basis formed in 0.000 seconds.
+The size of the variety over the algebraic closure of the ground field found in 
+0.000 seconds.
+false {@ @}
+Time: 1.000
+false {@ @}
+Time: 0.150
+ products of basis vectors found in 1.070 seconds.
+Coordinates of vectors found in 0.030 seconds.
+Time: 1.100
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.010 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+The structure constants accessed in 0.000 seconds
+Left-hand and right-hand matrices formed in 0.010 seconds.
+The solution space for the system found in 0.020 seconds
+The current memory used is 209.093750000000000000000000000 megabytes
+checking on all triples..
+The products of basis elements accessed in 0.000 seconds.
+The values (a_ia_j, a_k) evaluated in 0.010 seconds.
+Check for basis 1 of the solution space completed in 0.010 seconds
+Time: 0.040
+The products of basis elements accessed in 0.000 seconds.
+The values (a_ia_j, a_k) evaluated in 0.000 seconds.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.010 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.030 seconds
+The variety over the ground field found in 0.000 seconds
+Time: 295.200
+true
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/2 = [ 1/2 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*1/8 = [ 1/8 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/2*1/2 = [ 1, 0, 1/2 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/2*1/8 = [ 1/8 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/8*1/8 = [ 1, 0, 1/2 ] checked in 0.010 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.760 seconds.
+law 0*0 = [ 0 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 1.890 seconds.
+law 0*1/2 = [ 1/2 ] checked in 0.020 seconds.
+products of vectors from the respective eigenspaces found in 0.800 seconds.
+law 0*1/8 = [ 1/8 ] checked in 0.020 seconds.
+products of vectors from the respective eigenspaces found in 1.800 seconds.
+law 1/2*1/2 = [ 1, 0, 1/2 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 1.800 seconds.
+law 1/2*1/8 = [ 1/8 ] checked in 0.010 seconds.
+products of vectors from the respective eigenspaces found in 0.800 seconds.
+law 1/8*1/8 = [ 1, 0, 1/2 ] checked in 0.020 seconds.
+30
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 1.740 seconds
+current dimension is 75
+Current size of used_prods is 45 
+current is [ 1, 75 ], new is [ 31, 75 ]
+products of both inputs and images computed in 13.400 seconds
+Current size of used_prods is 1 
+The current counter current is [ 1, 75 ] and the new counter is [ 31, 75 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 76
+Current size of used_prods is 1 
+now exited the while loop
+ products of basis vectors found in 0.010 seconds.
+Coordinates of vectors found in 0.000 seconds.
+The structure constants accessed in 0.000 seconds
+Left-hand and right-hand matrices formed in 0.000 seconds.
+The solution space for the system found in 0.000 seconds
+The current memory used is 209.093750000000000000000000000 megabytes
+checking on all triples..
+The products of basis elements accessed in 0.000 seconds.
+The values (a_ia_j, a_k) evaluated in 0.000 seconds.
+Check for basis 1 of the solution space completed in 0.000 seconds
+Time: 0.000
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.010 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+Time: 0.010
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+current dimension is 6
+Current size of used_prods is 3 
+current is [ 1, 6 ], new is [ 4, 6 ]
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 1 
+The current counter current is [ 1, 6 ] and the new counter is [ 4, 6 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 7
+Current size of used_prods is 1 
+now exited the while loop
+ images of vectors in L found in 0.000 seconds
+We check on the 7 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.010 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.010 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+ images of vectors in L found in 0.000 seconds
+We check on the 7 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+ images of vectors in L found in 0.000 seconds
+We check on the 7 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+current dimension is 13
+Current size of used_prods is 9 
+current is [ 1, 13 ], new is [ 5, 13 ]
+products of both inputs and images computed in 0.050 seconds
+Current size of used_prods is 2 
+The current counter current is [ 1, 13 ] and the new counter is [ 5, 13 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 15
+Current size of used_prods is 2 
+now exited the while loop
+7
+The adjoint matrices of the subalgebra bases elements found in 0.010 seconds.
+The adjoint actions of the bases vectors of the subalgebra acting on the module
+   found in 0.000 seconds.
+The coefficients of the images of bases vectors of the subalgebra acting on the 
+module
+   found in 0.000 seconds.
+The coefficient matrix of the system of equations found in 0.000 seconds
+ The system of equations solved in 0.000 seconds
+Space of extensions found, and is of dimension 1, now checking on all of basis 
+vectors..
+The matrices encoding the coefficients of the module bases images under the 
+subalgebra found in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Time: 0.020
+[1 0 0 0]
+[0 1 0 0]
+[0 0 1 0]
+[0 0 0 1]
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.010 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+Time: 296.250
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*3/10 = [ 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 3/10*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*3/10 = [ 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 3/10*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*3/10 = [ 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 0*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 3/10*1/20 = [ 1/20 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.000 seconds.
+Time: 0.010
+The adjoint matrices of the subalgebra bases elements found in 1.070 seconds.
+The adjoint actions of the bases vectors of the subalgebra acting on the module
+   found in 0.030 seconds.
+The coefficients of the images of bases vectors of the subalgebra acting on the 
+module
+   found in 0.020 seconds.
+The coefficient matrix of the system of equations found in 0.020 seconds
+ The system of equations solved in 0.020 seconds
+Space of extensions found, and is of dimension 2, now checking on all of basis 
+vectors..
+The matrices encoding the coefficients of the module bases images under the 
+subalgebra found in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Check for the map in basis 2 of the extension fails for i= 1 and j= 1. More 
+equations needed.
+The check for basis element 2 of the extension completed in 0.000 seconds.
+Selecting another set of 121 equations..
+The new system of equations solved in 0.010 seconds and the space of extensions 
+is now of dimension 2 .
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Check for the map in basis 2 of the extension fails for i= 1 and j= 1. More 
+equations needed.
+The check for basis element 2 of the extension completed in 0.010 seconds.
+Selecting another set of 121 equations..
+The new system of equations solved in 0.040 seconds and the space of extensions 
+is now of dimension 1 .
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Time: 1.800
+The adjoint matrices of the subalgebra bases elements found in 1.070 seconds.
+The adjoint actions of the bases vectors of the subalgebra acting on the module
+   found in 0.030 seconds.
+The coefficients of the images of bases vectors of the subalgebra acting on the 
+module
+   found in 0.040 seconds.
+The coefficient matrix of the system of equations found in 0.010 seconds
+ The system of equations solved in 0.010 seconds
+Space of extensions found, and is of dimension 1, now checking on all of basis 
+vectors..
+The matrices encoding the coefficients of the module bases images under the 
+subalgebra found in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Time: 2.040
+The adjoint matrices of the subalgebra bases elements found in 1.080 seconds.
+The adjoint actions of the bases vectors of the subalgebra acting on the module
+   found in 0.030 seconds.
+The coefficients of the images of bases vectors of the subalgebra acting on the 
+module
+   found in 0.030 seconds.
+The coefficient matrix of the system of equations found in 0.020 seconds
+ The system of equations solved in 0.000 seconds
+Space of extensions found, and is of dimension 1, now checking on all of basis 
+vectors..
+The matrices encoding the coefficients of the module bases images under the 
+subalgebra found in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Time: 1.770
+11
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 1.400 seconds
+current dimension is 64
+Current size of used_prods is 42 
+current is [ 1, 64 ], new is [ 23, 64 ]
+products of both inputs and images computed in 13.800 seconds
+Current size of used_prods is 12 
+The current counter current is [ 1, 64 ] and the new counter is [ 23, 64 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 76
+Current size of used_prods is 12 
+now exited the while loop
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 1.150 seconds
+current dimension is 64
+Current size of used_prods is 42 
+current is [ 1, 64 ], new is [ 23, 64 ]
+products of both inputs and images computed in 12.830 seconds
+Current size of used_prods is 12 
+The current counter current is [ 1, 64 ] and the new counter is [ 23, 64 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 76
+Current size of used_prods is 12 
+now exited the while loop
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 1.410 seconds
+current dimension is 64
+Current size of used_prods is 42 
+current is [ 1, 64 ], new is [ 23, 64 ]
+products of both inputs and images computed in 12.760 seconds
+Current size of used_prods is 12 
+The current counter current is [ 1, 64 ] and the new counter is [ 23, 64 ]
+multiplication is now closed with minimum 3-closure 
+current dimension is 76
+Current size of used_prods is 12 
+now exited the while loop
+
+Total time: 2989.329 seconds, Total memory usage: 2098.16MB
