@@ -1,0 +1,40 @@
+> Attach("Automorphisms.m");
+> SetVerbose("Automorphisms", 1);
+> load "~/Computations/L3_2_4B3C_structs.m";
+Loading "/home/tendai/Computations/L3_2_4B3C_structs.m"
+
+In file "/home/tendai/Computations/L3_2_4B3C_structs.m", line 5, column 6:
+>>   [  ,  1/64,       0, -1/64,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       
+        ^
+User error: bad syntax
+> load "~/Computations/L3_2_4B3C_structs.m";
+Loading "/home/tendai/Computations/L3_2_4B3C_structs.m"
+
+In file "/home/tendai/Computations/L3_2_4B3C_structs.m", line 28, column 13:
+>>   [ -1/64,  ,       0,  1/64,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       0,       
+               ^
+User error: bad syntax
+> load "~/Computations/L3_2_4B3C_structs.m";
+Loading "/home/tendai/Computations/L3_2_4B3C_structs.m"
+> A := Algebra<Rationals(), 49| L>;
+
+>> A := Algebra<Rationals(), 49| L>;
+               ^
+Runtime error in Algebra< ... >: Rhs argument 1 is invalid for this constructor
+
+> #L;
+441
+> 49*49;
+2401
+> #L[1];
+21
+> #L[2];
+21
+> #L[3];
+21
+> #L[4];
+21
+> #L[441];
+21
+
+Total time: 0.030 seconds, Total memory usage: 32.09MB

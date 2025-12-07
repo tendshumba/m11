@@ -5059,3 +5059,2182 @@ nothing new
 0 0 0 0 0 0 1), (0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0 0 1 
 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
 0) @}
+> stcsts := eval Read("~/Automorphisms/structs_3A3C3C3C_C3_S3");
+> B := Algebra<9, F|stcsts>;
+
+>> B := Algebra<9, F|stcsts>;
+                   ^
+User error: Identifier 'F' has not been declared or assigned
+> F := Rationals();
+> B := Algebra<9, F|stcsts>;
+
+>> B := Algebra<9, F|stcsts>;
+               ^
+Runtime error in Algebra< ... >: Invalid argument(s) on LHS
+
+> B := Algebra<F, 9|stcsts>;
+
+>> B := Algebra<F, 9|stcsts>;
+               ^
+Runtime error in Algebra< ... >: Rhs argument 1 is invalid for this constructor
+
+> B := Algebra<F, 12|stcsts>;
+> B;
+Algebra of dimension 12 with base ring Rational Field
+> axes_B := [B.i : i in [1..12] IsIdempotent(B.i)];
+
+>> axes_B := [B.i : i in [1..12] IsIdempotent(B.i)];
+                                 ^
+User error: bad syntax
+> axes_B := [B.i : i in [1..12]| IsIdempotent(B.i)];
+> #axes_B;
+9
+> MiyB := MiyamotoGroup(axes_B);
+idempotency check completed in 0.000
+The number of all sigma maps is 0
+products of tau maps of axes with that of the first axis found in 0.000 seconds
+Orders of products found in 0.000 seconds
+The number of tau maps of maximum order 3 is 8 found in 0.000 seconds
+The number of used products is 3
+The initial group formed in 0.000 seconds
+Reducing the number of generators of the Miyamoto group..
+The numbers of generators of the current group reduced to two
+A generator added
+The number of generators of the Miyamoto group reduced in 0.010 seconds
+The Miyamoto group is C3:S3
+The number of generators of Miy is 3
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.000 seconds.
+The isomorphism between the permutation and matrix representation found in 0.000
+seconds.
+> MiyBp, MiyB := MiyamotoGroup(axes_B);
+idempotency check completed in 0.000
+The number of all sigma maps is 0
+products of tau maps of axes with that of the first axis found in 0.000 seconds
+Orders of products found in 0.000 seconds
+The number of tau maps of maximum order 3 is 8 found in 0.000 seconds
+The number of used products is 3
+The initial group formed in 0.000 seconds
+Reducing the number of generators of the Miyamoto group..
+The numbers of generators of the current group reduced to two
+A generator added
+The number of generators of the Miyamoto group reduced in 0.010 seconds
+The Miyamoto group is C3:S3
+The number of generators of Miy is 3
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.000 seconds.
+The isomorphism between the permutation and matrix representation found in 0.000
+seconds.
+> Type(MiyB);
+GrpMat
+> time FindAllAxesNuanced(B:axes:=axes_B);
+The structure constants accessed in 0.000 seconds
+Left-hand and right-hand matrices formed in 0.000 seconds.
+The solution space for the system found in 0.000 seconds
+The current memory used is 32.0937500000000000000000000000 megabytes
+checking on all triples..
+The products of basis elements accessed in 0.000 seconds.
+The values (a_ia_j, a_k) evaluated in 0.010 seconds.
+Check for basis 1 of the solution space completed in 0.010 seconds
+idempotency check completed in 0.000
+The number of all sigma maps is 0
+products of tau maps of axes with that of the first axis found in 0.000 seconds
+Orders of products found in 0.000 seconds
+The number of tau maps of maximum order 3 is 8 found in 0.000 seconds
+The number of used products is 3
+The initial group formed in 0.000 seconds
+Reducing the number of generators of the Miyamoto group..
+The numbers of generators of the current group reduced to two
+A generator added
+The number of generators of the Miyamoto group reduced in 0.010 seconds
+The Miyamoto group is C3:S3
+The number of generators of Miy is 3
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.000 seconds.
+The isomorphism between the permutation and matrix representation found in 0.000
+seconds.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.000 seconds
+orbit 1 3A nice idempotents found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+potential axes found in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The axes in potential axes found in 0.010 seconds.
+The axes coming from orbit 1 and B of type 3A found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.010 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.010 seconds
+orbit 1 2A nice idempotents found.
+The axes coming from orbit 1 and B of type 2A found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.000 seconds
+orbit 1 3C nice idempotents found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+potential axes found in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The axes in potential axes found in 0.010 seconds.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.010 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.010 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+potential axes found in 0.010 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The axes in potential axes found in 0.010 seconds.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+potential axes found in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.010 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*0 = [ 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/4 = [ 1/4 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 0*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/4 = [ 1, 0 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/4*1/32 = [ 1/32 ] checked in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 0.000 seconds.
+law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.000 seconds.
+The axes in potential axes found in 0.010 seconds.
+The axes coming from orbit 1 and B of type 3C found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.010 seconds
+orbit 1 6A nice idempotents found.
+The axes coming from orbit 1 and B of type 6A found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.000 seconds
+orbit 1 4B nice idempotents found.
+The axes coming from orbit 1 and B of type 4B found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.000 seconds
+orbit 1 5A nice idempotents found.
+The axes coming from orbit 1 and B of type 5A found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+attempted to find idempotents in 0.000 seconds.
+orbit 1 4A nice idempotents found.
+The axes coming from orbit 1 and B of type 4A found.
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.000 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+idempotents found in 0.010 seconds
+orbit 1 2B nice idempotents found.
+The axes coming from orbit 1 and B of type 2B found.
+nothing new
+{@ (0 0 0 0 0 0 0 1 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0 0 0 0 0 0 0 0 0 1 
+0), (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0 0 0 0 1 0 0 0 0 0
+0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0
+1) @}
+Time: 0.110
+> GroupName(MiyBp);
+C3:S3
+> aut := AutomorphismGroup(MiyBp);
+> Order(aut);
+432
+> taus_B := [TauMapMonster(axes_B[i]) : i in [1..9]];
+
+TauMap(
+    a: (0 0 0 1 0 0 0 0 0 0 0 0),
+    T: <unassigned>
+)
+In file "/home/tendai/m11/Automorphisms.m", line 765, column 13:
+>>    require #T[1] gt 0 and #T[2] gt 0: "Both parts of T can't be empty.";
+               ^
+Runtime error: Variable 'T' has not been initialized
+
+> #axes_B;
+9
+> TauMapMonster(axes_B[1]);
+
+TauMap(
+    a: (0 0 0 1 0 0 0 0 0 0 0 0),
+    T: <unassigned>
+)
+In file "/home/tendai/m11/Automorphisms.m", line 765, column 13:
+>>    require #T[1] gt 0 and #T[2] gt 0: "Both parts of T can't be empty.";
+               ^
+Runtime error: Variable 'T' has not been initialized
+
+> Eigenvalues(AdMat(axes_B[1]));
+{ <1, 1>, <1/32, 5>, <0, 5>, <1/4, 1> }
+> Attach("Automorphisms.m");
+> TauMapMonster(axes_B[1]);
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0  1/32     0     0     0     0     0     0 -1/32]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+> taus_B := [TauMapMonster(axes_B[i]) : i in [1..9]];
+> exists(t){ t: t in taus_B| IsIdentity(t)};
+false
+> gens := [Matrix(x) : x in Generators(MiyB)];
+> #gens;
+3
+> perms := [[Position(axes_B, axes_B[i]*x) : i in [1..9]] : x in gens];
+> #perms;
+3
+> MiyBp, MiyB, isomB := MiyamotoGroup(axes_B);
+idempotency check completed in 0.000
+The number of all sigma maps is 0
+products of tau maps of axes with that of the first axis found in 0.000 seconds
+Orders of products found in 0.000 seconds
+The number of tau maps of maximum order 3 is 8 found in 0.000 seconds
+The number of used products is 3
+The initial group formed in 0.000 seconds
+Reducing the number of generators of the Miyamoto group..
+The numbers of generators of the current group reduced to two
+A generator added
+The number of generators of the Miyamoto group reduced in 0.020 seconds
+The Miyamoto group is C3:S3
+The number of generators of Miy is 3
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.000 seconds.
+The isomorphism between the permutation and matrix representation found in 0.000
+seconds.
+> perms := [taus_B[i]@@isomB : i in [1..12]];
+
+>> perms := [taus_B[i]@@isomB : i in [1..12]];
+                   ^
+Runtime error in '[]': Sequence index 10 should be in the range 1 to 9
+
+> perms := [taus_B[i]@@isomB : i in [1..9]];
+> GroupName(aut);
+AGL(2,3)
+> outs := [ x : x in Generators(aut) | not IsInnerAutomorphism(x)];
+> #outs;
+2
+> out1 := [Position(perms, perms[i]@outs[1]) : i in [1..9]];
+> IsCoercible(MiyBp, out1);
+false
+> out1 := Sym(9)!out1;
+> out2 := [Position(perms, perms[i]@outs[2]) : i in [1..9]];
+> 
+> out2 := Sym(9)!out2;
+> IsCoercible(MiyBp, out2);
+false
+> GroupName(PermutationGroup<9|MiyBp, out1, out2>);
+S9
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out1] : i in [1..9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out2] : i in [1..9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> auts := [x : x in aut];
+
+>> auts := [x : x in aut];
+                ^
+Runtime error in for: Iteration is not possible over this object
+> subs9 := Subgroups(aut:IndexEqual:=9);
+
+>> subs9 := Subgroups(aut:IndexEqual:=9);
+                     ^
+Runtime error in 'Subgroups': Bad argument types
+Argument types given: GrpAuto
+
+> GroupName(PermutationGroup<9| out1, out2>);
+GL(2,3)
+> out_gp := (PermutationGroup<9| out1, out2>);
+> #out_gp;
+48
+> Order(MiyB);
+18
+> 18*48;
+864
+> 864/2;
+432
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_p] : i in [1..9]]);
+
+>> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_p] : i in [1..9]]);
+                                                    ^
+User error: Identifier 'out_p' has not been declared or assigned
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gp.1] : i in [1..9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> out_gpList := [x:x in out_gp | not IsIdentity(x)];
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gplist[1]] : i in [1..9\
+]]);
+
+>> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gplist[1]] : i in [1..
+                                                    ^
+User error: Identifier 'out_gplist' has not been declared or assigned
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gplist[1]] : i in [1..9\
+]]);
+
+>> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gplist[1]] : i in [1..
+                                                    ^
+User error: Identifier 'out_gplist' has not been declared or assigned
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[1]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[2]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[3]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 1 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[4]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0 1), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[5]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[6]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0  1/32 -1/32     0     0     0     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+> _,T :=$1;
+> Order(T);
+2
+> T in MiyB;
+false
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[7]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 1 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[8]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[9]] : i in [1..9\
+]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[10]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[11]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0  1/32 -1/32     0     0     0     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+> _,T1 :=$1;
+> T1 in MiyB;
+false
+> Order(T1);
+3
+> Order(T);
+2
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[11]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.010 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0  1/32 -1/32     0     0     0     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[12]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0  1/32     0     0     0     0     0     0 -1/32]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0  1/32 -1/32     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+> _,T2 :=$1;
+> Order(T2);
+3
+> #{T, T1, T2};
+3
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[13]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[14]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 1 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[15]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 1 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[16]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[17]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[18]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[19]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0  1/32 -1/32     0     0     0     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0     0     0     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+> _,T3 :=$1;
+> #{T, T1, T2, T3};
+4
+> Order(T3);
+2
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[20]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.010 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0  1/32     0     0     0     0     0     0 -1/32]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+> _,T4 :=$1;
+> #{T, T1, T2, T3, T4};
+5
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[21]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[22]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 1 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[23]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 1 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[24]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[25]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    0     0     1     0     0     0     0  1/32 -1/32     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0  1/32     0     0     0     0     0     0 -1/32]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+> _,T5 :=$1;
+> #{T, T1, T2, T3, T4, T5};
+6
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[26]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[27]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 1 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[28]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0 1), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[29]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[30]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 1 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[31]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[0 0 1 0 0 0 0 0 0 0 0 0]
+[0 1 0 0 0 0 0 0 0 0 0 0]
+[1 0 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 1 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 1 0 0 0 0]
+[0 0 0 0 0 0 0 0 1 0 0 0]
+[0 0 0 0 0 0 1 0 0 0 0 0]
+[0 0 0 0 1 0 0 0 0 0 0 0]
+[0 0 0 0 0 1 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 1 0 0]
+[0 0 0 0 0 0 0 0 0 0 0 1]
+[0 0 0 0 0 0 0 0 0 0 1 0]
+> _,T6 :=$1;
+> Order(T6);
+2
+> T6 in Miy;
+
+>> T6 in Miy;
+         ^
+User error: Identifier 'Miy' has not been declared or assigned
+> T6 in MiyB;
+false
+> T5 in MiyB;
+false
+> T4 in MiyB;
+false
+> T3 in MiyB;
+false
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[32]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.010 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    1     0     0     0     0     0     0     0     0     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    0     0     1     0     0     0     0  1/32 -1/32     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+> _,T7 :=$1;
+> Order(T7);
+2
+> #{T, T1, T2, T3, T4, T5, T6};
+7
+> #{T, T1, T2, T3, T4, T5, T6, T8};
+
+>> #{T, T1, T2, T3, T4, T5, T6, T8};
+                                ^
+User error: Identifier 'T8' has not been declared or assigned
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[33]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 1 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[34]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[35]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 1 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[36]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0 1), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[37]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[38]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    0     0     1     0     0     0     0  1/32     0     0 -1/32     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0  1/32     0     0     0     0     0     0 -1/32]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+> _,T8 :=$1;
+> #{T, T1, T2, T3, T4, T5, T6, T8};
+8
+> Order(T8);
+2
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[39]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 1 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[40]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[41]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.000 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    0     0     1     0     0     0     0  1/32 -1/32     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0     0     0     0     0     0     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+> _,T9 :=$1;
+> #{T, T1, T2, T3, T4, T5, T6, T8, T9};
+9
+> #{T, T1, T2, T3, T4, T5, T6, T7, T8, T9};
+10
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[42]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 1 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[43]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.010 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 1 0 0 0 0 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[44]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 0 1), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[45]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 1 0 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[46]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+
+ExtendMapToAlgebraAutomorphism(
+    input: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 1 0 0 0 0 0 0 0), (0 0...,
+    images: [ (0 0 0 1 0 0 0 0 0 0 0 0), (0 0 0 0 0 0 0 0 0 0 1 0), (0 0...
+)
+In file "/home/tendai/m11/Automorphisms.m", line 1542, column 38:
+>>                bool := IsAutomorphism(A, phi_mat: generators:= generators);
+                                        ^
+Runtime error in 'IsAutomorphism': The second argument must be invertible.
+
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[47]] : i in [1..\
+9]]);
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 0.000 seconds
+Current size of used_prods is 3 
+The current counter current is [ 1, 9 ] and the new counter is [ 1, 9 ]
+multiplication is now closed with minimum 2-closure 
+current dimension is 12
+Current size of used_prods is 3 
+now exited the while loop
+ There are user defined generators
+ images of vectors in L found in 0.000 seconds
+We check on the 12 generators
+for i eq 1, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 1 products of images formed in 0.000 seconds
+for i eq 2, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 2 products of images formed in 0.000 seconds
+for i eq 3, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 3 products of images formed in 0.010 seconds
+for i eq 4, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 4 products of images formed in 0.000 seconds
+for i eq 5, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 5 products of images formed in 0.000 seconds
+for i eq 6, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 6 products of images formed in 0.000 seconds
+for i eq 7, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 7 products of images formed in 0.000 seconds
+for i eq 8, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 8 products of images formed in 0.000 seconds
+for i eq 9, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 9 products of images formed in 0.000 seconds
+for i eq 10, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 10 products of images formed in 0.000 seconds
+for i eq 11, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 11 products of images formed in 0.000 seconds
+for i eq 12, products of the generators found in 0.000 seconds
+images of products found in 0.000 seconds
+for i eq 12 products of images formed in 0.000 seconds
+true 
+[    0     0     1     0     0     0     0     0     0     0     0     0]
+[    0     1     0     0     0     0     0     0     0     0     0     0]
+[    1     0     0     0  1/32 -1/32     0     0     0     0     0     0]
+[    0     0     0     1     0     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     0     1     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     1     0]
+[    0     0     0     0     0     0     0     0     0     1     0     0]
+[    0     0     0     0     0     1     0     0     0     0     0     0]
+[    0     0     0     0     1     0     0     0     0     0     0     0]
+[    0     0     0     0     0     0     1     0     0     0     0     0]
+[    0     0     0     0     0     0     0     0     0     0     0     1]
+[    0     0     0     0     0     0     0     0     1     0     0     0]
+> _,T10 :=$1;
+> #{T, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10};
+11
+> Order(T10);
+6
+> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[48]] : i in [1..9]]);
+
+>> ExtendMapToAlgebraAutomorphism(axes_B, [axes_B[i^out_gpList[48]] : i in [1..9]]);
+                                                              ^
+Runtime error in '[]': Sequence index 48 should be in the range 1 to 47
+
+> extensions := {T, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10};
+> GroupName(MatrixGroup<12, F | extensions>);
+D6
+> NumberOfGenerators(MatrixGroup<12, F | extensions>);
+11
+> [Order(T) : T in extensions];
+[ 2, 3, 3, 2, 2, 2, 6, 2, 2, 2, 6 ]
+> GroupName(MatrixGroup<12, F | T, T10>);
+D6
+> GroupName(MatrixGroup<12, F | MiyB, T, T10>);
+C3.S3^2
+> GG := (MatrixGroup<12, F | MiyB, T, T10>);
+> Order(GG);
+108
+> 432/108;
+4
+> 27*4;
+108
+> IsIsomorphic(GG, Group("C3^{1+2}: C2^2"));
+Runtime error: Group: Did not understand C3^{1+2}
+> IsIsomorphic(GG, Group("C3^{3}: C2^2"));
+false
+
+Total time: 38917.879 seconds, Total memory usage: 2347.59MB
