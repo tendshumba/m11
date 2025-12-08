@@ -9,8 +9,6 @@
  form_101 := eval Read("form_101");
  axes_101 := [A_101.i : i in [1..101] | IsIdempotent(A_101.i)];
  time Miy101_p, Miy101, isom101, gpname101 := MiyamotoGroup(axes_101);
- Attach("~/Automorphisms/MonsterFusionLawChecks.m");
- Attach("~/Downloads/GroupFromAxes_1a.m");
  time G_perm, G, iso_G, gpname_G, _ := GroupFromAxes(axes_101);
  GroupName(G);
  S := SylowSubgroup(G, 2);
