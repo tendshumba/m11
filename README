@@ -1,4 +1,4 @@
-This is code for the paper "On the automorphism group of the axial algebra for $M_{11}$"
+This is code for the paper "On the automorphism group of the axial algebra for $M_{11}$".
 The main file with the various routines used is Automorphisms.m, while examples for the 
 large algebras corresponding to $M_{11}$, the maximal subgroups $M_{10}$, and $L_2(11)$ 
 are included as ASCII text. These can be read using eval Read();. For these algebra, if 
