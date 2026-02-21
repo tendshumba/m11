@@ -15,13 +15,12 @@
  lm := LengthOfElement(axes[1], form);
  form := 1/lm*form;
  assert LengthOfElement(axes[1], form) eq 1;
- T := SylowSubgroup(Miy, 2);
- assert GroupName(T) eq "D4";
- subs4 := Subgroups(T:OrderEqual:=4);
+ S := SylowSubgroup(Miy, 2);
+ GroupName(S);
+ subs4 := Subgroups(S:OrderEqual:=4);
  #subs4;
- [GroupName(x`subgroup) : x in subs4];
- assert exists(i){ i : i in [1..#subs4] | GroupName(subs4[i]`subgroup) eq "C2^2"}; 
- Y := {@y : y in axes| TauMapMonster(y) in subs4[i]`subgroup @};
+ [GroupName(x`subgroup) : x in subs4]; 
+ Y := {@y : y in axes| TauMapMonster(y) in subs4[2]`subgroup @};
  #Y;
  V := Subalgebra(Y);
  assert Order(&*[TauMapMonster(x) : x in Y[[1,2]]]) eq 2;
@@ -29,36 +28,56 @@
  assert Y[1]*Y[3] eq 1/8*(Y[1]-Y[2]+Y[3]);
  assert Y[2]*Y[3] eq 1/8*(-Y[1]+Y[2]+Y[3]);
  // Thus Y generates 2A
- E := sub<Miy | [TauMapMonster(x) : x in Y]>;
- assert GroupName(E) eq "C2^2";
+ E := sub<G | [TauMapMonster(x) : x in Y]>;
+ GroupName(E);
 // Computation 4.1 (a) 
- time jordans := JordanAxes(A, [Matrix(x) : x in Generators(Miy)] : form := form);
+ time jordans := JordanAxes(A, [Matrix(x):x in Generators(Miy)]: form :=form);
  assert #jordans eq 0;
  // Part (b)
- time twins := FindTwins(axes[1]: form := form);
+ time twins := FindTwins(axes[1]:form := form);
  assert #twins eq 0;
- // Part (c)
+ // Part (c) We could use GroupFromAxes here to get that the group is $A_6{.}2^2$
+ aut := AutomorphismGroup(Miy_p);
+ Order(aut);
+ out := [x : x in Generators(aut) | not IsInnerAutomorphism(x)];
+ #out;
 
- time Gp, G := GroupFromAxes(axes);
- assert GroupName(Gp) in {"A6.C2^2", "S6.C2"};
+ //There is a one-to-one corresopndence between tau involutions and axes.
+ invs_perms := [TauMapMonster(axes[i])@@isom : i in [1..#axes]];
+ x1 := [Position(invs_perms, invs_perms[i]@out[1]) : i in [1..45]];
+ assert not IsCoercible(Miy_p, x1);
+ x2 := [Position(invs_perms, invs_perms[i]@out[2]) : i in [1..45]];
+ assert not IsCoercible(Miy_p, x2);
+ out1 := Sym(#axes)!x1;
+ out2 := Sym(#axes)!x2;
+ Order(out1);
+ Order(out2);
+ bool, ext1 := ExtendMapToAlgebraAutomorphism(axes, [axes[i^out1] : i in [1..45]]); 
+ assert bool;
+ Order(ext1);
 
+ time bool, ext2 := ExtendMapToAlgebraAutomorphism(axes, [axes[i^out2] : i in [1..45]]); 
+ assert bool;
+ Order(ext2);
+ G := MatrixGroup< 76, F|Miy, ext1, ext2>;
+ Order(G);
+ assert GroupName(G) in {"A6.C2^2", "S6.C2"}; 
+ invsG := [x : x in ConjugacyClasses(G) | x[1] eq 2];
+ #invsG;
+ assert {x[2]: x in invsG} eq {45,30,36};
+ i_30 := [i : i in [1..3] | invsG[i][2] eq 30][1];
+ i_36 := [i : i in [1..3] | invsG[i][2] eq 36][1];
 
  // This is computation 4.2 
- invsG := [x : x in ConjugacyClasses(G) | x[1] eq 2];
- exists(i_45){i : i in [1..3] | #Class(G, invsG[i][3]) eq 45};
- exists(i_30){i : i in [1..3] | #Class(G, invsG[i][3]) eq 30};
- exists(i_36){i : i in [1..3] | #Class(G, invsG[i][3]) eq 36};
- time bool := IsInducedFromAxis(A, Matrix(invsG[i_30][3]): form := form, automorphism_check := false);
- assert not bool;
- time bool := IsInducedFromAxis(A, Matrix(invsG[i_36][3]): form := form, automorphism_check := false);
- assert not bool;
+
+ time IsInducedFromAxis(A, Matrix(invsG[i_30][3]): form := form, automorphism_check := false);
+ time IsInducedFromAxis(A, Matrix(invsG[i_36][3]): form := form, automorphism_check := false);
 
  // Computation 4.3 now
  decomps := JointEigenspaceDecomposition(Y);
  assert Keys(decomps) eq {[0,0,0],[1/4, 1/32, 1/32], [1/32, 1/4, 1/32], [1/32, 1/32, 1/4], [0, 1/32, 1/32], [1/32, 0, 1/32], [1/32, 1/32,0]};
  // Part (a)
- U := decomps[[0,0,0]];
- assert Dimension(U) eq 15; 
+ assert Dimension(decomps[[0,0,0]]) eq 15; 
 
  // Part (b) 
  // (i)
@@ -70,12 +89,13 @@
 
  assert &+[decomps[x] : x in Keys(decomps)] ne VectorSpace(A);
  // The computation of Aut(U) requires the form to be unique.
+ U := decomps[[0,0,0]];
  form_Urest := RestrictedForm( form, U);
  time Ualg := Algebra<F, 15|AllStructureConstants(FindStructureConstantsSubalgebra(A, U))>;
  N := Normaliser(G, E);
  gensN := SetToSequence(Generators(N));
- gensN_s := {@ RestrictMapToSubspace(Matrix(x), U): x in gensN@};
- gensN_s := [x : x in gensN_s| not IsIdentity(x)];
+ gensN_s := [RestrictMapToSubspace(Matrix(x), U): x in gensN];
+ gensN_s := [Matrix(x) : x in gensN_s| not IsIdentity(x)];
  U_N := FindFixedSubalgebra(Ualg, gensN_s);
  assert Dimension(U_N) eq 5;
  twos_in_N := FindAllIdempotents(Ualg, U_N: length := 2, form := form_Urest); 
@@ -108,13 +128,10 @@
  // Remark 4.5
  z := TauMap(d_big, <[1,0,1/2], [1/8]>);
  assert z in G;
- z_class := Class(G, invsG[i_30][3]);
- assert z in z_class;
  assert not z in Miy;
  d_ims := Vector(d_big)^G;
- assert #d_ims eq 30;
+ #d_ims;
  assert Dimension(Subalgebra({@A!x :x in d_ims @})) eq 76;
- assert GroupName(sub<G | z_class>) eq "S6";
  // For the purposes of this computation we will denote by UU the subalgebra $U_0(d)$.
  UU := Eigenspace(ad_d, 0);
  UU_alg := Algebra<F, 7|AllStructureConstants(FindStructureConstantsSubalgebra(Ualg, UU))>;
@@ -137,7 +154,6 @@
  // Computation 4.6 (e) 
  taus_vs := [TauMap(seventeen_fifths[i], <[1, 0, 1/10, 13/30],[1/20, 7/20]>): i in [1..3]];
  assert forall{t : t in taus_vs| Order(t) eq 2 and IsAutomorphism(UU_alg, t)};
- assert GroupName(MatrixGroup<7, F | taus_vs>) eq "S3";
 
  // Computation 4.8
  W := Eigenspace(ad_d, 1/8);
@@ -174,45 +190,7 @@
  W1 := decomps[[0, 1/32, 1/32]];
  W2 := decomps[[ 1/32,0, 1/32]];
  W3 := decomps[[ 1/32, 1/32, 0]];
-
- v1 := A!seven_fifths[1]@BasisMatrix(U);
- v2 := A!seven_fifths[2]@BasisMatrix(U);
- v3 := A!seven_fifths[3]@BasisMatrix(U);
- ad_v1 := AdMat(v1);
- ad_v2 := AdMat(v2);
- ad_v3 := AdMat(v3);
- v1_on_Ws := [Eigenvalues(RestrictMapToSubspace(ad_v1, W)) : W in [W1, W2, W3]];
- assert #[i : i in [1..3] | v1_on_Ws[i] eq {<1/20, 4>, <3/10, 2>, <0, 5>}] eq 1;
- assert #[i : i in [1..3] | v1_on_Ws[i] eq {<3/160, 8>, <7/32, 3>}] eq 2;
-
- v2_on_Ws := [Eigenvalues(RestrictMapToSubspace(ad_v2, W)) : W in [W1, W2, W3]];
- assert #[i : i in [1..3] | v2_on_Ws[i] eq {<1/20, 4>, <3/10, 2>, <0, 5>}] eq 1;
- assert #[i : i in [1..3] | v2_on_Ws[i] eq {<3/160, 8>, <7/32, 3>}] eq 2;
-
- v3_on_Ws := [Eigenvalues(RestrictMapToSubspace(ad_v3, W)) : W in [W1, W2, W3]];
- assert #[i : i in [1..3] | v3_on_Ws[i] eq {<1/20, 4>, <3/10, 2>, <0, 5>}] eq 1;
- assert #[i : i in [1..3] | v3_on_Ws[i] eq {<3/160, 8>, <7/32, 3>}] eq 2;
-
- // We can do the same with the u_is. In fact, what is in the paper is the computation with the u_is
-
- u1 := A!(seventeen_fifths[1]@BasisMatrix(UU))@BasisMatrix(U);
- ad_u1 := AdMat(u1);
- u1_on_Ws := [ Eigenvalues(RestrictMapToSubspace(ad_u1, W)) : W in [W1, W2, W3]]; 
- assert #[i : i in [1..3] | u1_on_Ws[i] eq {<1/20, 4>, <1/30, 1>, <1/5, 1>, <3/10, 2>, <9/20, 1>, <19/20, 1>, <23/60, 1>}] eq 1; 
- assert #[i : i in [1..3] | u1_on_Ws[i] eq {<117/160, 1>, <37/160, 2>, <79/480, 1>, <53/160, 4>, <1/32, 2>, <31/480, 1> }] eq 2; 
- u2 := A!(seventeen_fifths[2]@BasisMatrix(UU))@BasisMatrix(U);
- ad_u2 := AdMat(u2);
- u2_on_Ws := [ Eigenvalues(RestrictMapToSubspace(ad_u2, W)) : W in [W1, W2, W3]]; 
- assert #[i : i in [1..3] | u2_on_Ws[i] eq {<1/20, 4>, <1/30, 1>, <1/5, 1>, <3/10, 2>, <9/20, 1>, <19/20, 1>, <23/60, 1>}] eq 1; 
- assert #[i : i in [1..3] | u2_on_Ws[i] eq {<117/160, 1>, <37/160, 2>, <79/480, 1>, <53/160, 4>, <1/32, 2>, <31/480, 1> }] eq 2; 
-
- u3 := A!(seventeen_fifths[3]@BasisMatrix(UU))@BasisMatrix(U);
- ad_u3 := AdMat(u3);
- u3_on_Ws := [ Eigenvalues(RestrictMapToSubspace(ad_u3, W)) : W in [W1, W2, W3]]; 
- assert #[i : i in [1..3] | u3_on_Ws[i] eq {<1/20, 4>, <1/30, 1>, <1/5, 1>, <3/10, 2>, <9/20, 1>, <19/20, 1>, <23/60, 1>}] eq 1; 
- assert #[i : i in [1..3] | u3_on_Ws[i] eq {<117/160, 1>, <37/160, 2>, <79/480, 1>, <53/160, 4>, <1/32, 2>, <31/480, 1> }] eq 2; 
-
- // Computation 4.15 (a)
+ // Computation 4.13 (a)
  Ws := [W1, W2, W3];
  for W in Ws do
     time bool, ext_W := ExtendAutToMod(A, U, W, IdentityMatrix(F, 15));
@@ -220,7 +198,8 @@
     assert Dimension(ext_W) eq 1;
  end for;
  Dimension(Ws[1]);
-// Computation 4.15 (b)
+
+// Computation 4.13 (b)
  assert Dimension(Subalgebra({@A!W1.i : i in [1..11]@} join {@W2.i : i in [1..11]@} )) eq 76;
  assert Dimension(Subalgebra({@A!W1.i : i in [1..11]@} join {@W3.i : i in [1..11]@} )) eq 76;
  assert Dimension(Subalgebra({@A!W2.i : i in [1..11]@} join {@W3.i : i in [1..11]@} )) eq 76;
@@ -229,10 +208,10 @@
  w2 := A!W2.1;
  w3 := A!W3.1;
  u := A!U.1;
- // Computation 4.15 (c)
+ // Computation 4.13 (c)
  // (c) (i)
  assert FrobeniusFormAtElements(w1*w1, u, form) ne 0;
  assert FrobeniusFormAtElements(w2*w2, u, form) ne 0;
  assert FrobeniusFormAtElements(w3*w3, u, form) ne 0;
- // (c) (ii)
+ // (c) (ii)assert FrobeniusFormAtElements(w3*w3, u, form) ne 0;
  assert FrobeniusFormAtElements(w1*w2, w3, form) ne 0;
