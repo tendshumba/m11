@@ -1,11 +1,7 @@
-
-// load "~/Automorphisms/M11_6A4B5A.txt"; // perhaps change when a reecord is produced?
  Attach("Automorphisms.m");
  SetVerbose("Automorphisms", 1);
  SetVerbose("Fusion_check",1); 
  F := Rationals();
- //A := Algebra<F, 286 | structs>;
- //form := Matrix(form);
  A := eval Read("A_286");
  form := eval Read("form_286");
  axes := [A.i : i in [1..286] | IsIdempotent(A.i) ];
@@ -45,28 +41,28 @@
  // the route I wanted to take and abandoned was to use the permutation form of P to define an action on C and show that it has two orbits
  assert P eq sub<P | [x[3] : x in twos ]>;
  //time bool, ax_z := IsInducedFromAxis(A, Matrix(z):form := form, automorphism_check := false);
-// this is a bit slow, taking : Time: 333.890
-// assert bool;
-// assert #ax_z eq 1;
-// a := ax_z[1];
+ // this is a bit slow, taking : Time: 333.890
+ // assert bool;
+ // assert #ax_z eq 1;
+ // a := ax_z[1];
  time taus := [TauMapMonster(axes[i]) : i in [1..165]]; // takes under a minute
  a :=axes[Index(taus, Matrix(z))];
- assert TauMapMonster(a) eq Matrix(z);
+ assert TauMapMonster(a) eq z;
 
- assert exists(z1){ t : t in taus | t eq Matrix(twos[1][3]) };
+ assert exists(z1){ t : t in taus | t eq (twos[1][3]) };
  // way faster way than using IsInducedFromAxis
  
  a1 :=axes[Index(taus, z1)];
  assert TauMapMonster(a1) eq z1;
  assert exists(g){ g : g in P | (twos[1][3])^g ne twos[1][3]}; 
- z2 := Matrix((P!z1)^g);
+ z2 := (P!z1)^g;
  a2 :=axes[Index(taus, z2)];
  assert TauMapMonster(a2) eq z2;
- assert exists(z3){ t : t in taus | t eq Matrix(twos[2][3]) };
+ assert exists(z3){ t : t in taus | t eq (twos[2][3]) };
  a3 :=axes[Index(taus, z3)];
  assert TauMapMonster(a3) eq z3;
  assert exists(g){ g : g in P | (twos[2][3])^g ne twos[2][3]}; 
- z4 := Matrix((P!z3)^g);
+ z4 := (P!z3)^g;
  a4 :=axes[Index(taus, z4)];
  assert TauMapMonster(a4) eq z4;
  ad_a := AdMat(a);
@@ -97,7 +93,8 @@
  assert IsSubalgebra(Ualg, U1_e);
  assert IsSubalgebra(Ualg, U0_e);
  
- // Recall that we have V := <a, a_1, a_2> and V:= <a, a_3, a_4> both 2A subalgebra of E\cong 4B spanned by {a, a_1, a_2, a_3, a_a}
+ /* Recall that we have V := <a, a_1, a_2>=<<a_1, a_2>> and W:= <a, a_3, a_4>=<<a_3, a_4>>, both 2A subalgebras
+ of E\cong 4B spanned by {a, a_1, a_2, a_3, a_4}*/
  one_V := 4/5*(&+[ a, a1, a2]);
  assert forall{ x : x in [a, a1, a2] |x*one_V eq x};
  one_W := 4/5*(&+[ a, a3, a4]);
@@ -109,8 +106,8 @@
  w_s := Ualg!(w@@BasisMatrix(U));
  assert v_s in U1_e;
  assert w_s in U1_e;
- assert LengthOfElement(v_s, form_U) eq 7/5;
 
+ assert LengthOfElement(v_s, form_U) eq 7/5;
  assert LengthOfElement(w_s, form_U) eq 7/5;
  assert LengthOfElement(u_s, form_U) eq 14/5;
  assert v*w eq 0;
@@ -118,22 +115,23 @@
  assert Dimension(Subalgebra({@a1, a4@})) eq 5; 
  assert a1*a3 eq 1/64*(a1 +a3-a2-a4+a);
  ad_vU :=AdMat(v_s); 
- ad_wU :=AdMat(w_s); 
- // Cmputation 6.4 assert Eigenvalues 
- 
+ ad_wU :=AdMat(w_s);
+
+ // Cmputation 6.4
  // Part (a)
  assert Eigenvalues(ad_vU) eq {<1,1>, <0, 59>, <3/10, 13>, <1/20,55>};
  assert Eigenvalues(ad_wU) eq {<1,1>, <0, 59>, <3/10, 13>, <1/20,55>};
 
  // Part (b)
+ assert HasAlmostMonsterFusionLaw(v_s:arbitrary_parameters :=<3/10, 1/20>); 
  assert HasAlmostMonsterFusionLaw(w_s:arbitrary_parameters :=<3/10, 1/20>); 
 
  // Part (c)
  tau_v := TauMapMonster(v_s:values := <3/10, 1/20>);
- z1_U := RestrictMapToSubspace(z1, U);
- z2_U := RestrictMapToSubspace(z2, U);
- z3_U := RestrictMapToSubspace(z3, U);
- z4_U := RestrictMapToSubspace(z4, U);
+ z1_U := RestrictMapToSubspace(Matrix(z1), U);
+ z2_U := RestrictMapToSubspace(Matrix(z2), U);
+ z3_U := RestrictMapToSubspace(Matrix(z3), U);
+ z4_U := RestrictMapToSubspace(Matrix(z4), U);
  assert z3_U eq z4_U;
  tau_w := TauMapMonster(w_s:values := <3/10, 1/20>);
  assert tau_v eq z3_U;
@@ -143,41 +141,46 @@
  assert Dimension(J) eq 26;
  
  // Computation 6.5 (a)
- time P_restrictedToJ := {RestrictMapToSubspace(x, J@BasisMatrix(U)) : x in [Matrix(z), z1, z2, z3, z4]}; 
+ time P_restrictedToJ := {RestrictMapToSubspace(Matrix(x), J@BasisMatrix(U)) : x in [z, z1, z2, z3, z4]}; 
  assert #P_restrictedToJ eq 1;
 
- assert forall{x : x in P_restrictedToJ | IsIdentity(x)}; 
+ assert P_restrictedToJ eq {IdentityMatrix(F, 26)};
  // hence P is identity on J
  S_P := {x : x in S | x notin P};
- #S_P;
+ assert #S_P eq 8;
 
  S_minusP_restrictedToJ := { RestrictMapToSubspace(Matrix(x), J@BasisMatrix(U)) : x in S_P};
  assert #S_minusP_restrictedToJ eq 1;
-
- assert forall{x : x in S_minusP_restrictedToJ | not IsIdentity(x)};
+ assert S_minusP_restrictedToJ ne {IdentityMatrix(F, 26)};
  assert Order(MatrixGroup<26, F| S_minusP_restrictedToJ>) eq 2;
+
+ // Part (b)
  Jalg := Algebra<F, 26 | AllStructureConstants(FindStructureConstantsSubalgebra(Ualg, J))>;
  J0 := FindFixedSubalgebra(Jalg, SetToSequence(S_minusP_restrictedToJ));
  assert Dimension(J0) eq 14;
+ assert forall{g : g in S_minusP_restrictedToJ | forall{ i : i in [1..14] | J0.i*g eq J0.i}};
  
  // Computation 6.6 (a)
 
  A0_u := Eigenspace(AdMat(u), 0);
  assert Dimension(A0_u) eq 30;
+
+ // Part (b)
  K := FindPerpWithRespectToForm(A, A0_u, J@BasisMatrix(U): form := form );
  assert Dimension(K) eq 4;
  assert forall{i : i in [1..4] | forall{j : j in [1..26] | FrobeniusFormAtElements(A!(J@BasisMatrix(U)).j, A!K.i, form) eq 0}};
  squares_K := [ x*x where x:= A!K.i : i in [1..4]]; 
  J0b := (J0@BasisMatrix(J))@BasisMatrix(U);
- Degree(J0b);
+ assert Degree(J0b) eq 286;
  Jb := J@BasisMatrix(U);
  ProjJb := ProjectionToSubspace(A, Jb, form);
- squares_Kprojs := {x*ProjJb : x in squares_K};
+ squares_Kprojs := {@ x*ProjJb : x in squares_K @};
  assert forall{x : x in squares_Kprojs | x in Jb};
- assert Subalgebra(IndexedSet(squares_Kprojs)) eq J0b;
+ assert Subalgebra({@ Ualg!(v@@BasisMatrix(U)) : v in squares_Kprojs @}) eq J0@BasisMatrix(J);
  // Remark: We may perform the above by forming the algebra version of $A_0(u)$ and
  // then working in this smaller algebra, however, we already had the things
- // for A in place and so it was more convenient, albeit a bit slow 
+ // for A in place and so it was more convenient, albeit a bit slow. In fact, working in A takes 648.22 seconds.
+ // Working in U however reduces the computation to 61.250 seconds.  
 
  rest := MapFromMatrix(IndexedSet(S_minusP_restrictedToJ)[1], Jb);
  assert forall{i : i in [1..14] | J0b.i@rest eq J0b.i};
@@ -188,29 +191,36 @@
  assert forall{i : i in [1..3] |FrobeniusFormAtElements(A!K0.1, a, form) eq 0 };
  assert a in K;
  assert K0 subset Eigenspace(ad_a, 1/4);
- [K0.i*(IndexedSet(S_P)[1]) eq K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[3]) eq K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[4]) eq K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[5]) eq -K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[6]) eq -K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[7]) eq K0.i : i in [1..3]];
- [K0.i*(IndexedSet(S_P)[8]) eq -K0.i : i in [1..3]];
- // so some elements from S\P negate K0, while the others fix K0. Depending on the run, 
- // rhe signs may change. The key thing is that an automorphism either fixes or negates all $K_0$
+ squares_K0 := [ x*x where x:= A!K0.i : i in [1..3]]; 
+ squares_K0projs := {@ x*ProjJb : x in squares_K0 @};
+ assert forall{g : g in S_P | forall{ i : i in [1..3] | (K0.i*g eq K0.i) or (K0.i*g eq -K0.i)}}; 
+ // so some elements from S\P negate K0, while the others fix K0.
+ assert Subalgebra({@ Ualg!(v@@BasisMatrix(U)) : v in squares_K0projs @}) eq J0@BasisMatrix(J);
  
  // Computation 6.8 (a)
  J0alg := Algebra<F, 14 | AllStructureConstants(FindStructureConstantsSubalgebra(Jalg, J0))>;
+ time bool, form_J0a := HasFrobeniusForm(J0alg);
+ assert bool;
+ assert Dimension(form_J0a) eq 1;
  form_J0 := RestrictedForm(form, J0b);
  form_J := RestrictedForm(form, Jb);
-
+ 
+ // Part (b)
  time twenty_six_fifths := FindAllIdempotents(J0alg, VectorSpace(J0alg): length := 26/5, form := form_J0);
  assert #twenty_six_fifths eq 1;
+
+ // Part (c)
  time thirty_six_fifths := FindAllIdempotents(J0alg, VectorSpace(J0alg): length := 36/5, form := form_J0);
  assert #thirty_six_fifths eq 1;
+
+ // Part (d)
  assert Subalgebra(thirty_six_fifths join twenty_six_fifths) eq VectorSpace(J0alg);
+
+ // Set up Computation 6.10
  B := FindPerpWithRespectToForm(Jalg, VectorSpace(Jalg), J0: form := form_J);
  assert Dimension(B) eq 12;
  assert forall{i : i in [1..14] | forall{ j : j in [1..12] | FrobeniusFormAtElements(Jalg!J0.i, Jalg!B.j, form_J) eq 0}};
+ assert forall{i : i in [1..12] | forall{ j : j in [1..14] | (Jalg!B.i)*(Jalg!J0.j) in B}}; // so indeed a module for J0 
  
  // Computation 6.10 (a)
  time bool, ext_J0_B := ExtendAutToMod(Jalg, J0, B, IdentityMatrix(F, 14));
@@ -219,25 +229,25 @@
 
  // 6.10 (b)
  ProjJ0 := ProjectionToSubspace(Jalg, J0, form_J);
- assert exists(b){ b : b in Basis(B) | (b*b)*ProjJ0 ne 0};
- 
+ assert exists(b){ b : b in Basis(B) | (y*y)*ProjJ0 ne 0 where y := Jalg!b};
+
+ // Computation 6.12
  T := Eigenspace(ad_eU, 7/20);
  assert Dimension(T) eq 12;
- 
- // Computation 6.12
  time assert Dimension(Subalgebra({@Ualg!T.i : i in [1..12] @})) eq 128;
 
+ // Remarks after Computation 6.12
  T1 := Eigenspace(ad_vU, 3/10) meet Eigenspace(ad_wU, 1/20); 
  assert Dimension(T1) eq 6;
  T2 := Eigenspace(ad_vU, 1/20) meet Eigenspace(ad_wU, 3/10); 
  assert T1 +T2 eq T;
- S_restU := {@ RestrictMapToSubspace(Matrix(x), U) : x in S_P @};
- assert forall{x : x in S_restU | v_s*x eq w_s and w_s*x eq v_s};
- assert forall{x : x in S_restU | T1*x eq T2 and T2*x eq T1};
+
+ // Computation 6.13
  assert #S_minusP_restrictedToJ eq 1;
  rho := IndexedSet(S_minusP_restrictedToJ)[1];
  assert forall{i : i in [1..12] | B.i*rho eq -B.i};
- // Computation 6.13 (a)
+
+ //Part (a)
  bool, ext_rho_T1 := ExtendAutToMod(Ualg, J, T1, rho); 
  assert bool;
  assert Dimension(ext_rho_T1) eq 1;
@@ -252,6 +262,7 @@
  assert FrobeniusFormAtElements(t1*t1, b, form_U) ne 0;
  assert FrobeniusFormAtElements(t2*t2, b, form_U) ne 0;
 
+ // Lemma 6.14 
  rho_map := MapFromMatrix(rho, J);
  phi_1 := MapFromMatrix(Matrix(F, 6, 6, Eltseq(ext_rho_T1.1)), T1);
  phi_2 := MapFromMatrix(Matrix(F, 6, 6, Eltseq(ext_rho_T2.1)), T2);

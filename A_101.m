@@ -93,13 +93,12 @@
  // Setup for Computation 5.3 onward
  V := Subalgebra(Y);
  assert Dimension(V) eq 3;
- //V_alg := Algebra<F, 3| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, V))>;
  W1_alg := Algebra<F, 26| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, W1))>;
  W2_alg := Algebra<F, 26| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, W2))>;
  _,one_W1 := HasOne(W1_alg); 
  _,one_W2 := HasOne(W2_alg); 
  one_Vb := 4/5*(&+Y);
- assert forall{y: y in Y |one_Vb*y eq y};
+ assert forall{y : y in Y | one_Vb*y eq y};
  one_W1b := A_101!(one_W1@BasisMatrix(W1));
  assert forall{i : i in [1..26] |one_W1b*(A_101!W1.i) eq W1.i};
  one_W2b := A_101!(one_W2@BasisMatrix(W2));
