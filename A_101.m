@@ -1,5 +1,4 @@
-
-SetSeed(1);
+ SetSeed(1);
  Attach("Automorphisms.m");
  SetVerbose("Automorphisms", 1); 
  F := Rationals();
@@ -43,7 +42,6 @@ SetSeed(1);
     end for;
  Y := {@a_1, a_2, a_3 @};
  assert exists(tau_3){x : x in Class(S, tau_2) | x ne tau_2};
- //E := MatrixGroup<101, F | tau_1, tau_2, tau_3>;
  E := sub< S | tau_1, tau_2, tau_3>;
  assert GroupName(E) eq "C2^2";
 
@@ -98,7 +96,6 @@ SetSeed(1);
  //V_alg := Algebra<F, 3| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, V))>;
  W1_alg := Algebra<F, 26| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, W1))>;
  W2_alg := Algebra<F, 26| AllStructureConstants(FindStructureConstantsSubalgebra(A_101, W2))>;
- //_,one_V := HasOne(V_alg); 
  _,one_W1 := HasOne(W1_alg); 
  _,one_W2 := HasOne(W2_alg); 
  one_Vb := 4/5*(&+Y);
@@ -295,4 +292,3 @@ SetSeed(1);
  assert FrobeniusFormAtElements(w3*w3, u, form_101) ne 0;
  // Part (ii)
  assert FrobeniusFormAtElements(w1*w2, w3, form_101) ne 0;
-
