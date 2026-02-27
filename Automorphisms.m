@@ -1971,9 +1971,9 @@ intrinsic SatisfiesFusionLaw(a::AlgGenElt, fus::List) -> BoolElt
           bool := (Set(prods) eq {0});
           if not bool then
             return false;
-            vprintf Fusion_check, 1: "law %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
+            vprintf Fusion_check, 1: "rule %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
           end if;
-          vprintf Fusion_check, 1: "law %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
+          vprintf Fusion_check, 1: "rule %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
         elif not IsEmpty(law[2]) then
           t0 := Cputime();
           proj := &*[ space_ann[l] : l in law[2]];
@@ -1981,9 +1981,9 @@ intrinsic SatisfiesFusionLaw(a::AlgGenElt, fus::List) -> BoolElt
           bool := (Set(ims) eq {0});
           if not bool then
             return false; 
-            vprintf Fusion_check, 1: "law %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
+            vprintf Fusion_check, 1: "rule %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
           end if;
-          vprintf Fusion_check, 1: "law %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
+          vprintf Fusion_check, 1: "rule %o*%o = %o checked in %o seconds.\n", law[1][1], law[1][2], law[2], Cputime(t0);
         end if;
     end if;
   end for;
