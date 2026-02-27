@@ -77,7 +77,6 @@
  u_s := Ualg!(u@@BasisMatrix(U));
  assert IsIdempotent(u_s);
  
-// time bool, form_U := HasFrobeniusForm(Ualg);
  form_U := RestrictedForm(form, U);
  // Computation 6.3
  // Part (a)
@@ -117,7 +116,7 @@
  ad_vU :=AdMat(v_s); 
  ad_wU :=AdMat(w_s);
 
- // Cmputation 6.4
+ // Computation 6.4
  // Part (a)
  assert Eigenvalues(ad_vU) eq {<1,1>, <0, 59>, <3/10, 13>, <1/20,55>};
  assert Eigenvalues(ad_wU) eq {<1,1>, <0, 59>, <3/10, 13>, <1/20,55>};
@@ -204,7 +203,7 @@
  assert Dimension(form_J0a) eq 1;
  form_J0 := RestrictedForm(form, J0b);
  form_J := RestrictedForm(form, Jb);
- 
+ delete form_J0a; 
  // Part (b)
  time twenty_six_fifths := FindAllIdempotents(J0alg, VectorSpace(J0alg): length := 26/5, form := form_J0);
  assert #twenty_six_fifths eq 1;
@@ -269,12 +268,10 @@
  lambda_1_sq := ((FrobeniusFormAtElements(t1*t1, b, form_U)/FrobeniusFormAtElements(t1_im*t1_im, b, form_U))) where t1_im := Ualg!(t1@phi_1);
  bool, c1 := IsSquare(lambda_1_sq);
  assert bool;
- c1;
  lambda_2_sq := ((FrobeniusFormAtElements(t2*t2, b, form_U)/FrobeniusFormAtElements(t2_im*t2_im, b, form_U))) where t2_im := Ualg!(t2@phi_2);
  assert bool;
  bool, c2 := IsSquare(lambda_2_sq);
  assert bool;
- c2;
  // We were basically implementing Equation (1) of Lemma 6.14 
  assert c1^2 eq lambda_1_sq;
  assert c2^2 eq lambda_2_sq;
@@ -323,7 +320,7 @@
  // We now recycle the use of K
  K := Eigenspace(ad_a, 1/32); 
  // Computation 6.19 (a)
- assert VectorSpace(A) eq Subalgebra({@A!K.i : i in [1..132] @});
+ time assert VectorSpace(A) eq Subalgebra({@A!K.i : i in [1..132] @});
  
  // Computation 6.19 (b)
  time bool, ext_id_K := ExtendAutToMod(A, U, K, IdentityMatrix(F, Dimension(U))); 
