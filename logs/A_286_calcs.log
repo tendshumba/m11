@@ -1,49 +1,41 @@
 > load "A_286.m";
 Loading "A_286.m"
-Loading "/home/tendai/Automorphisms/M11_6A4B5A.txt"
 The projection matrices found in 0.000 seconds.
-
-[Interrupted]
-
-> load "A_286.m";
-Loading "A_286.m"
-The projection matrices found in 0.010 seconds.
-products of vectors from the respective eigenspaces found in 103.970 seconds.
-law 0*0 = [ 0 ] checked in 5.190 seconds.
-products of vectors from the respective eigenspaces found in 52.470 seconds.
-law 0*1/4 = [ 1/4 ] checked in 0.350 seconds.
-products of vectors from the respective eigenspaces found in 107.190 seconds.
-law 0*1/32 = [ 1/32 ] checked in 1.650 seconds.
-products of vectors from the respective eigenspaces found in 55.750 seconds.
-law 1/4*1/4 = [ 1, 0 ] checked in 0.080 seconds.
-products of vectors from the respective eigenspaces found in 51.960 seconds.
-law 1/4*1/32 = [ 1/32 ] checked in 0.310 seconds.
-products of vectors from the respective eigenspaces found in 59.830 seconds.
-law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.750 seconds.
-Time: 439.910
+products of vectors from the respective eigenspaces found in 100.050 seconds.
+rule 0*0 = [ 0 ] checked in 5.070 seconds.
+products of vectors from the respective eigenspaces found in 49.610 seconds.
+rule 0*1/4 = [ 1/4 ] checked in 0.360 seconds.
+products of vectors from the respective eigenspaces found in 101.260 seconds.
+rule 0*1/32 = [ 1/32 ] checked in 1.590 seconds.
+products of vectors from the respective eigenspaces found in 50.040 seconds.
+rule 1/4*1/4 = [ 1, 0 ] checked in 0.080 seconds.
+products of vectors from the respective eigenspaces found in 48.840 seconds.
+rule 1/4*1/32 = [ 1/32 ] checked in 0.310 seconds.
+products of vectors from the respective eigenspaces found in 56.580 seconds.
+rule 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.750 seconds.
+Time: 414.940
 idempotency check completed in 0.000
-The number of all sigma maps is 0
-products of tau maps of axes with that of the first axis found in 1.960 seconds
-Orders of products found in 20.680 seconds
+products of tau maps of axes with that of the first axis found in 1.940 seconds
+Orders of products found in 20.240 seconds
 The number of tau maps of maximum order 6 is 48 found in 0.000 seconds
 The number of used products is 3
-The initial group formed in 0.060 seconds
+The initial group formed in 0.050 seconds
 Reducing the number of generators of the Miyamoto group..
 The numbers of generators of the current group reduced to two
-The number of generators of the Miyamoto group reduced in 481.990 seconds
+The number of generators of the Miyamoto group reduced in 461.840 seconds
 The Miyamoto group is M11
 The number of generators of Miy is 2
-closure of the axet found in 0.010 seconds.
-The permutation representation of the Miyamoto group found in 0.000 seconds.
+closure of the axet found in 0.000 seconds.
+The permutation representation of the Miyamoto group found in 0.010 seconds.
 The isomorphism between the permutation and matrix representation found in 0.000
 seconds.
-Time: 565.540
-products of basis vectors of the subspace found in 0.720 seconds
-The relation coming from the idempotency found in 0.010 seconds
-The quadratic length relation found in 0.000 seconds 
-The identity and the linear length relation found in 0.010 seconds 
-The ideal has been set up in 0.740 seconds.
-The Groebner basis has been computed in 0.000 seconds.
+Time: 542.850
+products of basis vectors of the subspace found in 0.750 seconds
+The relation coming from the idempotency found in 0.000 seconds
+The quadratic length relation found in 0.010 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.760 seconds.
+The Groebner basis has been computed in 0.010 seconds.
 The size of the variety over the algebraic closure computed in 0.000 seconds
 The variety over the ground field found in 0.000 seconds
 products of basis vectors of the subspace found in 0.720 seconds
@@ -54,46 +46,46 @@ The ideal has been set up in 0.730 seconds.
 The Groebner basis has been computed in 0.000 seconds.
 The size of the variety over the algebraic closure computed in 0.000 seconds
 The variety over the ground field found in 0.000 seconds
-Time: 1.540
+Time: 1.580
 The projection matrices found in 0.000 seconds.
-products of vectors from the respective eigenspaces found in 105.250 seconds.
-law 0*0 = [ 0 ] checked in 1.130 seconds.
-products of vectors from the respective eigenspaces found in 55.110 seconds.
-law 0*1/4 = [ 1/4 ] checked in 0.390 seconds.
-products of vectors from the respective eigenspaces found in 106.510 seconds.
-law 0*1/32 = [ 1/32 ] checked in 1.830 seconds.
-products of vectors from the respective eigenspaces found in 56.970 seconds.
-law 1/4*1/4 = [ 1, 0 ] checked in 0.080 seconds.
-products of vectors from the respective eigenspaces found in 52.080 seconds.
-law 1/4*1/32 = [ 1/32 ] checked in 0.330 seconds.
-products of vectors from the respective eigenspaces found in 58.950 seconds.
-law 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.790 seconds.
+products of vectors from the respective eigenspaces found in 101.190 seconds.
+rule 0*0 = [ 0 ] checked in 1.100 seconds.
+products of vectors from the respective eigenspaces found in 51.140 seconds.
+rule 0*1/4 = [ 1/4 ] checked in 0.400 seconds.
+products of vectors from the respective eigenspaces found in 102.220 seconds.
+rule 0*1/32 = [ 1/32 ] checked in 1.780 seconds.
+products of vectors from the respective eigenspaces found in 51.400 seconds.
+rule 1/4*1/4 = [ 1, 0 ] checked in 0.080 seconds.
+products of vectors from the respective eigenspaces found in 49.950 seconds.
+rule 1/4*1/32 = [ 1/32 ] checked in 0.330 seconds.
+products of vectors from the respective eigenspaces found in 56.910 seconds.
+rule 1/32*1/32 = [ 1, 0, 1/4 ] checked in 0.790 seconds.
 The length condition has been imposed.
-ideal set up in 0.770 seconds.
+ideal set up in 0.740 seconds.
 The Groebner basis formed in 0.000 seconds.
 The size of the variety over the algebraic closure of the ground field found in 
 0.000 seconds.
-ideal set up in 0.770 seconds.
-ideal set up in 0.770 seconds.
+ideal set up in 0.750 seconds.
+ideal set up in 0.750 seconds.
 The Groebner basis formed in 0.000 seconds.
 The size of the variety over the algebraic closure of the ground field found in 
 0.000 seconds.
-Time: 450.380
-Time: 55.130
- products of basis vectors found in 91.960 seconds.
-Coordinates of vectors found in 18.650 seconds.
-Time: 111.130
+Time: 427.960
+Time: 53.920
+ products of basis vectors found in 88.550 seconds.
+Coordinates of vectors found in 18.220 seconds.
+Time: 107.270
 The map form of the mapping formed in 0.000 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 0.030 seconds
+products of both inputs and images computed in 0.020 seconds
 current dimension is 3
 Current size of used_prods is 1 
 current is [ 1, 3 ], new is [ 3, 3 ]
-products of both inputs and images computed in 0.150 seconds
+products of both inputs and images computed in 0.140 seconds
 current dimension is 5
 Current size of used_prods is 2 
 current is [ 1, 5 ], new is [ 4, 5 ]
-products of both inputs and images computed in 0.350 seconds
+products of both inputs and images computed in 0.340 seconds
 Current size of used_prods is 0 
 The current counter current is [ 1, 5 ] and the new counter is [ 4, 5 ]
 multiplication is now closed with minimum 3-closure 
@@ -104,7 +96,7 @@ products of both inputs and images computed in 0.020 seconds
 current dimension is 3
 Current size of used_prods is 1 
 current is [ 1, 3 ], new is [ 3, 3 ]
-products of both inputs and images computed in 0.150 seconds
+products of both inputs and images computed in 0.140 seconds
 current dimension is 5
 Current size of used_prods is 2 
 current is [ 1, 5 ], new is [ 4, 5 ]
@@ -114,65 +106,93 @@ The current counter current is [ 1, 5 ] and the new counter is [ 4, 5 ]
 multiplication is now closed with minimum 3-closure 
 now exited the while loop
 The projection matrices found in 0.000 seconds.
-products of vectors from the respective eigenspaces found in 24.340 seconds.
-law 0*0 = [ 0 ] checked in 1.750 seconds.
-products of vectors from the respective eigenspaces found in 14.880 seconds.
-law 0*3/10 = [ 3/10 ] checked in 0.070 seconds.
-products of vectors from the respective eigenspaces found in 19.520 seconds.
-law 0*1/20 = [ 1/20 ] checked in 0.300 seconds.
-products of vectors from the respective eigenspaces found in 14.560 seconds.
-law 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.020 seconds.
-products of vectors from the respective eigenspaces found in 14.400 seconds.
-law 3/10*1/20 = [ 1/20 ] checked in 0.070 seconds.
-products of vectors from the respective eigenspaces found in 18.890 seconds.
-law 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.130 seconds.
+products of vectors from the respective eigenspaces found in 26.170 seconds.
+rule 0*0 = [ 0 ] checked in 1.670 seconds.
+products of vectors from the respective eigenspaces found in 14.540 seconds.
+rule 0*3/10 = [ 3/10 ] checked in 0.070 seconds.
+products of vectors from the respective eigenspaces found in 20.800 seconds.
+rule 0*1/20 = [ 1/20 ] checked in 0.310 seconds.
+products of vectors from the respective eigenspaces found in 13.680 seconds.
+rule 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.030 seconds.
+products of vectors from the respective eigenspaces found in 13.930 seconds.
+rule 3/10*1/20 = [ 1/20 ] checked in 0.070 seconds.
+products of vectors from the respective eigenspaces found in 20.460 seconds.
+rule 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.140 seconds.
+The projection matrices found in 0.000 seconds.
+products of vectors from the respective eigenspaces found in 23.650 seconds.
+rule 0*0 = [ 0 ] checked in 0.200 seconds.
+products of vectors from the respective eigenspaces found in 14.370 seconds.
+rule 0*3/10 = [ 3/10 ] checked in 0.080 seconds.
+products of vectors from the respective eigenspaces found in 18.620 seconds.
+rule 0*1/20 = [ 1/20 ] checked in 0.300 seconds.
+products of vectors from the respective eigenspaces found in 13.570 seconds.
+rule 3/10*3/10 = [ 1, 0, 3/10 ] checked in 0.030 seconds.
+products of vectors from the respective eigenspaces found in 13.690 seconds.
+rule 3/10*1/20 = [ 1/20 ] checked in 0.070 seconds.
+products of vectors from the respective eigenspaces found in 18.140 seconds.
+rule 1/20*1/20 = [ 1, 0, 3/10 ] checked in 0.130 seconds.
 Time: 0.080
-8
- products of basis vectors found in 26.830 seconds.
-Coordinates of vectors found in 0.800 seconds.
-286
+ products of basis vectors found in 25.480 seconds.
+Coordinates of vectors found in 0.790 seconds.
 The map form of the mapping formed in 0.000 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 59.570 seconds
+products of both inputs and images computed in 5.380 seconds
 current dimension is 8
 Current size of used_prods is 5 
 current is [ 1, 8 ], new is [ 4, 8 ]
-products of both inputs and images computed in 163.310 seconds
+products of both inputs and images computed in 14.050 seconds
 current dimension is 14
 Current size of used_prods is 6 
 current is [ 1, 14 ], new is [ 9, 14 ]
-products of both inputs and images computed in 282.330 seconds
+products of both inputs and images computed in 21.850 seconds
 Current size of used_prods is 0 
 The current counter current is [ 1, 14 ] and the new counter is [ 9, 14 ]
 multiplication is now closed with minimum 3-closure 
 now exited the while loop
-[ false, false, false ]
-[ true, true, true ]
-[ true, true, true ]
-[ true, true, true ]
-[ true, true, true ]
-[ true, true, true ]
-[ true, true, true ]
+The map form of the mapping formed in 0.000 seconds.
+The injectivity check performed in 0.000 seconds.
+products of both inputs and images computed in 5.380 seconds
+current dimension is 8
+Current size of used_prods is 5 
+current is [ 1, 8 ], new is [ 4, 8 ]
+products of both inputs and images computed in 14.150 seconds
+current dimension is 14
+Current size of used_prods is 6 
+current is [ 1, 14 ], new is [ 9, 14 ]
+products of both inputs and images computed in 22.190 seconds
+Current size of used_prods is 0 
+The current counter current is [ 1, 14 ] and the new counter is [ 9, 14 ]
+multiplication is now closed with minimum 3-closure 
+now exited the while loop
  products of basis vectors found in 0.100 seconds.
 Coordinates of vectors found in 0.010 seconds.
-products of basis vectors of the subspace found in 0.000 seconds
-The relation coming from the idempotency found in 0.000 seconds
-The quadratic length relation found in 0.010 seconds 
-The identity and the linear length relation found in 0.000 seconds 
-The ideal has been set up in 0.010 seconds.
-The Groebner basis has been computed in 64.950 seconds.
-The size of the variety over the algebraic closure computed in 0.000 seconds
-The variety over the ground field found in 0.000 seconds
-Time: 64.960
+The structure constants accessed in 0.000 seconds
+Left-hand and right-hand matrices formed in 0.000 seconds.
+The solution space for the system found in 0.020 seconds
+The current memory used is 2918.43750000000000000000000000 megabytes
+checking on all triples..
+The products of basis elements accessed in 0.000 seconds.
+The values (a_ia_j, a_k) evaluated in 0.010 seconds.
+Check for basis 1 of the solution space completed in 0.010 seconds
+Time: 0.030
 products of basis vectors of the subspace found in 0.010 seconds
 The relation coming from the idempotency found in 0.000 seconds
 The quadratic length relation found in 0.010 seconds 
 The identity and the linear length relation found in 0.000 seconds 
 The ideal has been set up in 0.020 seconds.
-The Groebner basis has been computed in 65.220 seconds.
+The Groebner basis has been computed in 64.350 seconds.
+The size of the variety over the algebraic closure computed in 0.000 seconds
+The variety over the ground field found in 0.000 seconds
+Time: 64.370
+products of basis vectors of the subspace found in 0.000 seconds
+The relation coming from the idempotency found in 0.010 seconds
+The quadratic length relation found in 0.000 seconds 
+The identity and the linear length relation found in 0.000 seconds 
+The ideal has been set up in 0.020 seconds.
+The Groebner basis has been computed in 64.610 seconds.
 The size of the variety over the algebraic closure computed in 0.010 seconds
 The variety over the ground field found in 0.000 seconds
-Time: 65.250
+Time: 64.640
 The map form of the mapping formed in 0.000 seconds.
 The injectivity check performed in 0.000 seconds.
 products of both inputs and images computed in 0.000 seconds
@@ -190,52 +210,38 @@ multiplication is now closed with minimum 5-closure
 current dimension is 14
 Current size of used_prods is 8 
 now exited the while loop
-The adjoint matrices of the subalgebra bases elements found in 0.100 seconds.
+The adjoint matrices of the subalgebra bases elements found in 0.080 seconds.
 The adjoint actions of the bases vectors of the subalgebra acting on the module
    found in 0.010 seconds.
 The coefficients of the images of bases vectors of the subalgebra acting on the 
 module
-   found in 0.030 seconds.
-The coefficient matrix of the system of equations found in 0.020 seconds
+   found in 0.020 seconds.
+The coefficient matrix of the system of equations found in 0.030 seconds
  The system of equations solved in 0.000 seconds
 Space of extensions found, and is of dimension 1, now checking on all of basis 
 vectors..
 The matrices encoding the coefficients of the module bases images under the 
 subalgebra found in 0.000 seconds.
-The products of phi with the matrices above computed in 0.010 seconds.
-The check for basis element 1 of the extension completed in 0.000 seconds.
-Time: 0.310
-The map form of the mapping formed in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.010 seconds.
+Time: 0.290
+The map form of the mapping formed in 0.010 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 15.190 seconds
+products of both inputs and images computed in 14.340 seconds
 current dimension is 55
 Current size of used_prods is 43 
 current is [ 1, 55 ], new is [ 13, 55 ]
-products of both inputs and images computed in 102.900 seconds
+products of both inputs and images computed in 93.780 seconds
 Current size of used_prods is 73 
 The current counter current is [ 1, 55 ] and the new counter is [ 13, 55 ]
 multiplication is now closed with minimum 3-closure 
 current dimension is 128
 Current size of used_prods is 73 
 now exited the while loop
-Time: 132.220
-The adjoint matrices of the subalgebra bases elements found in 26.910 seconds.
+Time: 121.770
+The adjoint matrices of the subalgebra bases elements found in 25.310 seconds.
 The adjoint actions of the bases vectors of the subalgebra acting on the module
-   found in 0.290 seconds.
-The coefficients of the images of bases vectors of the subalgebra acting on the 
-module
-   found in 0.100 seconds.
-The coefficient matrix of the system of equations found in 0.000 seconds
- The system of equations solved in 0.000 seconds
-Space of extensions found, and is of dimension 1, now checking on all of basis 
-vectors..
-The matrices encoding the coefficients of the module bases images under the 
-subalgebra found in 0.000 seconds.
-The products of phi with the matrices above computed in 0.010 seconds.
-The check for basis element 1 of the extension completed in 0.000 seconds.
-The adjoint matrices of the subalgebra bases elements found in 26.890 seconds.
-The adjoint actions of the bases vectors of the subalgebra acting on the module
-   found in 0.290 seconds.
+   found in 0.280 seconds.
 The coefficients of the images of bases vectors of the subalgebra acting on the 
 module
    found in 0.100 seconds.
@@ -245,18 +251,30 @@ Space of extensions found, and is of dimension 1, now checking on all of basis
 vectors..
 The matrices encoding the coefficients of the module bases images under the 
 subalgebra found in 0.000 seconds.
-The products of phi with the matrices above computed in 0.010 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
 The check for basis element 1 of the extension completed in 0.010 seconds.
-Time: 35.680
-503084/325247
-70300/47083
+The adjoint matrices of the subalgebra bases elements found in 25.160 seconds.
+The adjoint actions of the bases vectors of the subalgebra acting on the module
+   found in 0.290 seconds.
+The coefficients of the images of bases vectors of the subalgebra acting on the 
+module
+   found in 0.100 seconds.
+The coefficient matrix of the system of equations found in 0.010 seconds
+ The system of equations solved in 0.000 seconds
+Space of extensions found, and is of dimension 1, now checking on all of basis 
+vectors..
+The matrices encoding the coefficients of the module bases images under the 
+subalgebra found in 0.000 seconds.
+The products of phi with the matrices above computed in 0.000 seconds.
+The check for basis element 1 of the extension completed in 0.010 seconds.
+Time: 33.510
 The map form of the mapping formed in 0.010 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 36.130 seconds
+products of both inputs and images computed in 33.800 seconds
 current dimension is 55
 Current size of used_prods is 43 
 current is [ 1, 55 ], new is [ 13, 55 ]
-products of both inputs and images computed in 214.170 seconds
+products of both inputs and images computed in 190.530 seconds
 Current size of used_prods is 73 
 The current counter current is [ 1, 55 ] and the new counter is [ 13, 55 ]
 multiplication is now closed with minimum 3-closure 
@@ -264,21 +282,21 @@ current dimension is 128
 Current size of used_prods is 73 
 now exited the while loop
  There are user defined generators
- images of vectors in L found in 0.190 seconds
+ images of vectors in L found in 0.170 seconds
 We check on the 128 generators
 for i eq 1, products of the generators found in 0.000 seconds
-images of products found in 0.240 seconds
-for i eq 1 products of images formed in 3.660 seconds
+images of products found in 0.220 seconds
+for i eq 1 products of images formed in 3.460 seconds
  The pair 1,1 fails the homomorphism test
 The map is not automorphic
-Time: 268.110
-The map form of the mapping formed in 0.010 seconds.
+Time: 241.290
+The map form of the mapping formed in 0.020 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 37.260 seconds
+products of both inputs and images computed in 33.700 seconds
 current dimension is 55
 Current size of used_prods is 43 
 current is [ 1, 55 ], new is [ 13, 55 ]
-products of both inputs and images computed in 211.660 seconds
+products of both inputs and images computed in 191.820 seconds
 Current size of used_prods is 73 
 The current counter current is [ 1, 55 ] and the new counter is [ 13, 55 ]
 multiplication is now closed with minimum 3-closure 
@@ -289,18 +307,18 @@ now exited the while loop
  images of vectors in L found in 0.180 seconds
 We check on the 128 generators
 for i eq 1, products of the generators found in 0.000 seconds
-images of products found in 0.230 seconds
-for i eq 1 products of images formed in 3.650 seconds
+images of products found in 0.220 seconds
+for i eq 1 products of images formed in 3.530 seconds
  The pair 1,1 fails the homomorphism test
 The map is not automorphic
-Time: 266.900
-The map form of the mapping formed in 0.020 seconds.
+Time: 242.590
+The map form of the mapping formed in 0.010 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 37.540 seconds
+products of both inputs and images computed in 33.780 seconds
 current dimension is 55
 Current size of used_prods is 43 
 current is [ 1, 55 ], new is [ 13, 55 ]
-products of both inputs and images computed in 214.340 seconds
+products of both inputs and images computed in 191.330 seconds
 Current size of used_prods is 73 
 The current counter current is [ 1, 55 ] and the new counter is [ 13, 55 ]
 multiplication is now closed with minimum 3-closure 
@@ -312,17 +330,17 @@ now exited the while loop
 We check on the 128 generators
 for i eq 1, products of the generators found in 0.010 seconds
 images of products found in 0.220 seconds
-for i eq 1 products of images formed in 3.810 seconds
+for i eq 1 products of images formed in 3.540 seconds
  The pair 1,1 fails the homomorphism test
 The map is not automorphic
-Time: 270.070
+Time: 242.170
 The map form of the mapping formed in 0.020 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 36.650 seconds
+products of both inputs and images computed in 33.840 seconds
 current dimension is 55
 Current size of used_prods is 43 
 current is [ 1, 55 ], new is [ 13, 55 ]
-products of both inputs and images computed in 216.290 seconds
+products of both inputs and images computed in 190.490 seconds
 Current size of used_prods is 73 
 The current counter current is [ 1, 55 ] and the new counter is [ 13, 55 ]
 multiplication is now closed with minimum 3-closure 
@@ -334,13 +352,13 @@ now exited the while loop
 We check on the 128 generators
 for i eq 1, products of the generators found in 0.000 seconds
 images of products found in 0.230 seconds
-for i eq 1 products of images formed in 3.920 seconds
+for i eq 1 products of images formed in 3.600 seconds
  The pair 1,1 fails the homomorphism test
 The map is not automorphic
-Time: 270.830
-The adjoint matrices of the subalgebra bases elements found in 26.990 seconds.
+Time: 241.550
+The adjoint matrices of the subalgebra bases elements found in 25.090 seconds.
 The adjoint actions of the bases vectors of the subalgebra acting on the module
-   found in 0.300 seconds.
+   found in 0.290 seconds.
 The coefficients of the images of bases vectors of the subalgebra acting on the 
 module
    found in 0.100 seconds.
@@ -350,12 +368,12 @@ Space of extensions found, and is of dimension 1, now checking on all of basis
 vectors..
 The matrices encoding the coefficients of the module bases images under the 
 subalgebra found in 0.000 seconds.
-The products of phi with the matrices above computed in 0.000 seconds.
-The check for basis element 1 of the extension completed in 0.010 seconds.
-Time: 35.710
-The adjoint matrices of the subalgebra bases elements found in 26.950 seconds.
+The products of phi with the matrices above computed in 0.010 seconds.
+The check for basis element 1 of the extension completed in 0.000 seconds.
+Time: 33.290
+The adjoint matrices of the subalgebra bases elements found in 25.180 seconds.
 The adjoint actions of the bases vectors of the subalgebra acting on the module
-   found in 0.290 seconds.
+   found in 0.280 seconds.
 The coefficients of the images of bases vectors of the subalgebra acting on the 
 module
    found in 0.110 seconds.
@@ -364,37 +382,38 @@ The coefficient matrix of the system of equations found in 0.000 seconds
 Space of extensions found, and is of dimension 1, now checking on all of basis 
 vectors..
 The matrices encoding the coefficients of the module bases images under the 
-subalgebra found in 0.010 seconds.
+subalgebra found in 0.000 seconds.
 The products of phi with the matrices above computed in 0.000 seconds.
 The check for basis element 1 of the extension completed in 0.010 seconds.
-Time: 36.030
+Time: 33.510
 The map form of the mapping formed in 0.060 seconds.
 The injectivity check performed in 0.000 seconds.
-products of both inputs and images computed in 86.350 seconds
+products of both inputs and images computed in 82.180 seconds
 current dimension is 285
 Current size of used_prods is 153 
 current is [ 1, 285 ], new is [ 133, 285 ]
-products of both inputs and images computed in 2326.620 seconds
+products of both inputs and images computed in 2111.860 seconds
 Current size of used_prods is 1 
 The current counter current is [ 1, 285 ] and the new counter is [ 133, 285 ]
 multiplication is now closed with minimum 3-closure 
 current dimension is 286
 Current size of used_prods is 1 
 now exited the while loop
-The adjoint matrices of the subalgebra bases elements found in 73.970 seconds.
+Time: 2315.930
+The adjoint matrices of the subalgebra bases elements found in 72.150 seconds.
 The adjoint actions of the bases vectors of the subalgebra acting on the module
-   found in 3.340 seconds.
+   found in 3.280 seconds.
 The coefficients of the images of bases vectors of the subalgebra acting on the 
 module
-   found in 45.770 seconds.
-The coefficient matrix of the system of equations found in 296.170 seconds
- The system of equations solved in 350.130 seconds
+   found in 44.920 seconds.
+The coefficient matrix of the system of equations found in 215.200 seconds
+ The system of equations solved in 340.450 seconds
 Space of extensions found, and is of dimension 1, now checking on all of basis 
 vectors..
 The matrices encoding the coefficients of the module bases images under the 
-subalgebra found in 2.260 seconds.
-The products of phi with the matrices above computed in 1.140 seconds.
-The check for basis element 1 of the extension completed in 9.710 seconds.
-Time: 895.010
+subalgebra found in 0.800 seconds.
+The products of phi with the matrices above computed in 1.080 seconds.
+The check for basis element 1 of the extension completed in 9.050 seconds.
+Time: 795.600
 
-Total time: 7355.079 seconds, Total memory usage: 16448.84MB
+Total time: 6500.619 seconds, Total memory usage: 15670.53MB
