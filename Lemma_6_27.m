@@ -7,7 +7,7 @@
  invs_P := [ x : x in Classes(P) | x[1] eq 2];
  assert #invs_P eq 1;
  D := invs_P[1][3]^P;
- load "~/Computations/IsSixTranspositionClass.m";// add this file to the folder and change this part
+ load "IsSixTranspositionClass.m";
  time assert IsMTranspositionGroup(6, D, P);
  assert NumberOfGenerators(P) eq 12;
  H := sub<P | [P.i : i in [1..7]]>;
