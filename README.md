@@ -4,13 +4,15 @@ The main file with the various routines used is Automorphisms.m, while examples 
 large algebras corresponding to $M_{11}$, the maximal subgroups $M_{10}$, and $L_2(11)$ 
 are included as ASCII text. These can be read using eval Read();. For these algebras, if 
 its dimension is n (for instance for $M_{11}$, $n=286$) then the MAGMA data file is A_n. 
-In a magma session we can just read off as : 
-A := eval Read("A_286");
+In a magma session we can just read off as :\ 
+>A := eval Read("A_286");
 
 The Frobenius form for the algebras $A_n$ is in an ASCII text file "form_n", and can be read off again
 using the same command. The files with the computations for $A_n$ are in the files "A_n.m",
-except $A_{76}$, which is named A_76calcs.m, and can just be loaded in a MAGMA session using 
-load "A_286.m"; (and respectively load "A_76calcs.m";) again using $n=286$ as an example. 
+except $A_{76}$, which is named A_76calcs.m, and can just be loaded in a MAGMA session using\ 
+>load "A_286.m";\
+ (and respectively >load "A_76calcs.m";),\
+> again using $n=286$ as an example. 
 
 The computations for Lemmas 6.27 and 6.28 are included in a single file: "Lemma_6_27.m". 
 
