@@ -3,7 +3,7 @@ http://arxiv.org/abs/2602.07556.
 The main file with the various routines used is Automorphisms.m, while examples for the 
 large algebras corresponding to $M_{11}$, the maximal subgroups $M_{10}$, and $L_2(11)$ 
 are included as ASCII text. These can be read using eval Read();. For these algebras, if 
-its dimension is n (for instance for $M_{11}$ $n=286$) then the MAGMA data file is A_n. 
+its dimension is n (for instance for $M_{11}$, $n=286$) then the MAGMA data file is A_n. 
 In a magma session we can just read off as : 
 A := eval Read("A_286");
 
