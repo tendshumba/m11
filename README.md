@@ -11,8 +11,10 @@ The Frobenius form for the algebras $A_n$ is in an ASCII text file "form_n", and
 using the same command. The files with the computations for $A_n$ are in the files "A_n.m",
 except $A_{76}$, which is named A_76calcs.m, and can just be loaded in a MAGMA session using
 >load "A_286.m";
+
  (and respectively
 >load "A_76calcs.m";
+
 ),
 again using $n=286$ as an example. 
 
