@@ -1,4 +1,4 @@
-This is code for the paper "Full automorphism groups of the axial algebra for $M_{11}$ and related algebras": 
+This is code for the paper **Full automorphism groups of the axial algebra for $M_{11}$ and related algebras**: 
 http://arxiv.org/abs/2602.07556.
 The main file with the various routines used is Automorphisms.m, while examples for the 
 large algebras corresponding to $$M_{11}$$, the maximal subgroups $$M_{10}$$, and $$L_2(11)$$ 
