@@ -1051,10 +1051,12 @@ intrinsic HasFrobeniusForm(A::AlgGen ) -> BoolElt, ModTupFld
 	  end if;
 	  /*check that the solution holds for all basis elements/generators.*/
           vprintf Automorphisms, 1: "checking on all triples..\n";
+          check_failed := false;
           for i := 1 to Dimension(space) do
             form := Matrix(F, n, n, Eltseq(space.i));
             t0 := Cputime();
 	      if not IsAssociatingForm(A, form) then
+	        check_failed := true;
                 vprintf Automorphisms, 1: "Check failed, more equations required.\n";
                 // update
                 remaining_triples := triples diff Set(used_triples);
@@ -1069,11 +1071,13 @@ intrinsic HasFrobeniusForm(A::AlgGen ) -> BoolElt, ModTupFld
 		Include(~used_triples, triple); 
 		until #used_triples eq m;
                 break i;
-            end if;
+              end if;
             vprintf Automorphisms, 1: "Check for basis %o of the solution space "*
 	    "completed in %o seconds\n", i, Cputime(t0);
         end for;
-        complete := true;
+	if not check_failed then
+           complete := true;
+	end if;
     end while;
     return true, space;
  end intrinsic;
