@@ -1,0 +1,86 @@
+
+================ Setup ================
+   [reading the data file -> A: 0.280 s]
+   [Monster fusion law check: 5.370 s]
+   [Miyamoto group -> Miy_p, Miy, isom, gpname: 4.410 s]
+Miyamoto group: A6
+   [reading the data file -> form: 0.000 s]
+Frobenius form read from form_76.
+
+================ Computation 5.1 ================
+   [group of automorphisms preserving the axet -> Gp, G: 15.430 s]
+Computation 5.1(a): the group of known automorphisms is G of order 1440, G = 
+S6.C2
+   [search for Jordan axes -> jordans: 0.580 s]
+Computation 5.1(b): A has no Jordan axes.
+   [search for twins -> twins: 5.870 s]
+Computation 5.1(c): the 45 axes have no twins.
+   [search for axes inducing the involution -> bool: 0.810 s]
+   [search for axes inducing the involution -> bool: 0.120 s]
+Computation 5.1(d): the involutions of G in the classes of sizes 30 and 36 are 
+not induced by axes.
+
+================ Computation 5.2 ================
+   [joint eigenspace decomposition -> decomps: 0.030 s]
+Computation 5.2: dim U = 15; 1/4-components of dimension 5; W_1, W_2, W_3 of 
+dimension 11; the sum of the joint eigenspaces has dimension 63 < 76.
+
+================ Computation 5.3 ================
+   [structure constants of the subalgebra -> Ualg: 1.040 s]
+   [space of Frobenius forms -> forms_U: 0.040 s]
+Computation 5.3(a): the space of Frobenius forms on U is 1-dimensional.
+   [fixed subalgebra -> U_N: 0.000 s]
+   [idempotent search (Groebner basis) -> idemps_UN: 2.580 s]
+   lengths of the 24 idempotents of U_N: [ 0, 68/35, 2, 20/7, 18/5, 24/5, 34/7, 
+36/7, 26/5, 194/35, 28/5, 226/35, 50/7, 8, 282/35, 42/5, 296/35, 306/35, 44/5, 
+10, 376/35, 58/5, 408/35, 68/5 ]
+Computation 5.3(b): dim U_N = 5; U_N has 24 idempotents over the algebraic 
+closure, exactly one, d, of length 2, and d is rational.
+   [idempotent search (Groebner basis) -> twos_in_U: 235.330 s]
+Computation 5.3(c): d is the only idempotent of length 2 in U (over the 
+algebraic closure).
+Computation 5.3(d): ad_d diagonalisable; eigenvalues 1, 0, 1/2, 1/8 of 
+multiplicities 1, 34, 9, 32 on A and 1, 7, 3, 4 on U.
+   [fusion law check: 0.060 s]
+   [fusion law check: 7.910 s]
+Computation 5.3(e): d satisfies AM(1/2,1/8) in U and in A.
+
+================ Remark 5.4 ================
+   [subalgebra generated: 15.610 s]
+Remark 5.4: tau_d = z lies in the class of 30 involutions of G outside M; the 30
+G-images of d generate A; the class generates S_6.
+
+================ Computation 5.5 ================
+   [structure constants of the subalgebra -> Up_alg: 0.010 s]
+   [idempotent search (Groebner basis) -> idemps_17_5: 0.010 s]
+Computation 5.5(a): U' has exactly three idempotents u_1, u_2, u_3 of length 
+17/5 over the algebraic closure; all rational.
+   [subalgebra generated: 0.010 s]
+Computation 5.5(b): <<u_1, u_2, u_3>> = U'.
+   [subalgebra generated: 0.050 s]
+Computation 5.5(c): <<W'>> = U.
+   [space of extensions to the module -> ext_Wp: 0.020 s]
+Computation 5.5(d): the extensions of id_{U'} to W' form a 1-dimensional space.
+Computation 5.5(e): (w^2, u) <> 0 for w = basis vector 1 of W' and u = basis 
+vector 1 of U'.
+
+================ Computation 5.7 ================
+   u_i has eigenvalue 1/5 on W_j (rows i, columns j): [
+    [ false, true, false ],
+    [ true, false, false ],
+    [ false, false, true ]
+]
+Computation 5.7(a): each u_i has the eigenvalue 1/5 on exactly one W_j, and 
+these W_j are distinct.
+   [space of extensions to the module -> ext_W: 1.540 s]
+Computation 5.7(b): the extensions of id_U to W_1 form a 1-dimensional space.
+   [space of extensions to the module -> ext_W: 1.880 s]
+Computation 5.7(b): the extensions of id_U to W_2 form a 1-dimensional space.
+   [space of extensions to the module -> ext_W: 1.630 s]
+Computation 5.7(b): the extensions of id_U to W_3 form a 1-dimensional space.
+   [subalgebra generated: 16.870 s]
+Computation 5.7(c): <<W_1, W_2, W_3>> = A.
+Computation 5.7(d): (w_i^2, u) <> 0 for i = 1, 2, 3 and (w_1 w_2, w_3) <> 0.
+
+================ Done ================
+Total CPU time: 356.460 s
